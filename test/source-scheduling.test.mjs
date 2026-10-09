@@ -50,6 +50,11 @@ function harness(sources, options = {}) {
     },
     getRun: async id => structuredClone(runs.get(id)),
     updateRun: async (id, patch) => { Object.assign(runs.get(id), patch); return structuredClone(runs.get(id)); },
+    finishRunIfNotStopped: async (id, patch) => {
+      const row = runs.get(id);
+      if (row.status === 'Running' && !row.requestedStopAt) Object.assign(row, patch);
+      return structuredClone(row);
+    },
     updateCheckpoint: async (id, checkpoint) => { rows.get(id).checkpoint = structuredClone(checkpoint); },
     updateHealth: async () => undefined,
     createDlq: async () => undefined,

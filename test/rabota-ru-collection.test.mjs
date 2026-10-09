@@ -479,11 +479,12 @@ describe('Rabota.ru public SSR vacancy collection', () => {
   it('keeps unknown dates, filters records outside the fixed window, and follows observed pagination without assuming date sort semantics', async () => {
     const freshUnknown = job(10, { datePosted: undefined });
     const old = job(11, { datePosted: '2026-08-01T10:00:00.000Z' });
-    const future = job(12, { datePosted: '2026-10-06T10:00:00.000Z' });
+    const future = job(12, { datePosted: new Date(Date.now() + 86_400_000).toISOString() });
     const detailOld = job(13, { datePosted: undefined });
     const web = new FakeExtraction({
       [base]: listHtml({ jobs: [freshUnknown, old, future, detailOld], next: '/vacancy/?sort=date&page=2' }),
       [freshUnknown.url]: detailHtml(freshUnknown, { publishStartAt: undefined }),
+      [future.url]: detailHtml(future),
       [detailOld.url]: detailHtml(detailOld, { publishStartAt: '2026-08-01T10:00:00.000Z' }),
     });
 

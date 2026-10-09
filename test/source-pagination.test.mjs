@@ -599,7 +599,7 @@ test('HH connector resets terminal checkpoint so the next run starts at page zer
 
 test('ATS public board connector completes a finite rotated tenant cycle', async () => {
   const connector = new AtsPublicBoardConnector('greenhouse');
-  connector.fetchTenant = async (tenant) => [record(tenant)];
+  connector.fetchTenant = async (tenant) => ({ records: [record(tenant)] });
   const first = await connector.fetchPage({
     source: source({ _id: 'greenhouse', connectorFamily: 'AtsPublicBoard', config: { tenants: ['a', 'b', 'c'] }, limits: { maxTenantsPerRun: 2 } }),
     requestId: 'ats-test',

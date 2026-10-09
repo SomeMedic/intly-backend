@@ -112,7 +112,7 @@ class MockExtraction {
 }
 
 test('finder.work discovers public region catalogue and collects first verified region list from real fixture', async () => {
-  const fixture = readFileSync('../.local/reports/public-source-expansion-fixtures-20261004/finder-list.html', 'utf8');
+  const fixture = readFileSync(new URL('./fixtures/finder-work/finder-list.html', import.meta.url), 'utf8');
   const extraction = new MockExtraction({
     regions: regionsHtml(['moskva', 'sankt-peterburg']),
     regionOverviews: { moskva: regionOverviewHtml('moskva', '/vacancies/moskva') },

@@ -875,6 +875,12 @@ function processingHarness({ retrieveContext, providerResult, completionNotify, 
       Object.assign(run, patch);
       return { ...run };
     },
+    recordAttempts: async (id, attempts) => {
+      const run = runs.get(id);
+      if (!run || !['running', 'cancelled'].includes(run.status)) return null;
+      Object.assign(run, { attempts: structuredClone(attempts) });
+      return { ...run };
+    },
     updateRunTerminal: async (id, patch) => {
       const run = runs.get(id);
       if (!run || run.status !== 'running') return null;

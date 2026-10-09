@@ -174,6 +174,11 @@ function processService(providerOutput, authorizedDocuments = tenderDocuments) {
     getProvider: async () => ({ provider: 'openai', enabled: true, apiKeyEncrypted: 'encrypted' }),
     updateRunStage: async (_id, stage) => { run = { ...run, stage }; return run; },
     updateRunningRun: async (_id, input) => { run = { ...run, ...input }; return run; },
+    recordAttempts: async (_id, attempts) => {
+      if (!['running', 'cancelled'].includes(run.status)) return null;
+      run = { ...run, attempts: structuredClone(attempts) };
+      return run;
+    },
     updateRunTerminal: async (_id, input) => { run = { ...run, ...input }; Object.assign(completed, run); return run; },
     getPrompt: async () => null,
   };

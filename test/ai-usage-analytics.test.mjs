@@ -14,11 +14,22 @@ const { AiService } = require('../src/modules/ai/ai.service.ts');
 const { AdminAiUsageQueryDto } = require('../src/modules/ai/dto/ai.dto.ts');
 const { AiAnalysis, AiAnalysisSchema } = require('../src/modules/ai/schemas/ai-analysis.schema.ts');
 
+async function resolveMongoUri() {
+  if (process.env.MONGODB_URI) return process.env.MONGODB_URI;
+  try {
+    const env = require('dotenv').parse(await readFile(new URL('../.env', import.meta.url)));
+    if (env.MONGODB_URI) return env.MONGODB_URI;
+  } catch (error) {
+    if (error?.code !== 'ENOENT') throw error;
+  }
+  throw new Error('MONGODB_URI is required for AI usage analytics integration test');
+}
+
 test('AI usage analytics in isolated real Mongo database', async t => {
-  const env = require('dotenv').parse(await readFile(new URL('../.env', import.meta.url)));
-  const uri = new URL(env.MONGODB_URI);
+  const mongoUri = await resolveMongoUri();
+  const uri = new URL(mongoUri);
   assert.ok(['localhost', '127.0.0.1'].includes(uri.hostname), 'Only a loopback QA database is allowed');
-  const connection = await mongoose.createConnection(env.MONGODB_URI, { dbName: `intly_ai_usage_qa_${randomUUID().replaceAll('-', '')}`, serverSelectionTimeoutMS: 5000 }).asPromise();
+  const connection = await mongoose.createConnection(mongoUri, { dbName: `intly_ai_usage_qa_${randomUUID().replaceAll('-', '')}`, serverSelectionTimeoutMS: 5000 }).asPromise();
   try {
     const model = connection.model(AiAnalysis.name, AiAnalysisSchema);
     const repository = new AiRepository(model);

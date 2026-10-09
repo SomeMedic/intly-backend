@@ -17,7 +17,8 @@ const processedStatuses = new Set([
 ]);
 
 describe('dashboard recommendations', () => {
-  it('ranks recommendations across the full eligible profile corpus instead of the newest 100 rows', async () => {
+  it('ranks recommendations across the full eligible profile corpus instead of the newest 100 rows', async (t) => {
+    t.mock.timers.enable({ apis: ['Date'], now: new Date('2026-10-05T12:30:00.000Z') });
     const baseDate = Date.parse('2026-10-05T12:00:00.000Z');
     const newestLow = Array.from({ length: 120 }, (_, index) => opportunity({
       _id: `newest-low-${String(index).padStart(3, '0')}`,

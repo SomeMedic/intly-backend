@@ -265,8 +265,8 @@ test('yc jobs uses @graph JobPosting matching the current detail URL and falls b
 });
 
 test('yc jobs parses saved live YC fixtures for datePosted, skills, salary and full body', async () => {
-  const listFixture = readFileSync('.local/reports/yc-jobs-20261004/yc-jobs.html', 'utf8');
-  const detailFixture = readFileSync('.local/reports/yc-jobs-20261004/yc-detail-boldvoice.html', 'utf8');
+  const listFixture = readFileSync(new URL('./fixtures/yc-jobs/yc-jobs.html', import.meta.url), 'utf8');
+  const detailFixture = readFileSync(new URL('./fixtures/yc-jobs/yc-detail-boldvoice.html', import.meta.url), 'utf8');
   const ids = Array.from(listFixture.matchAll(/&quot;id&quot;:(\d+)/g)).map((match) => match[1]);
   assert.equal(ids.includes('45768'), true);
   const extraction = new MockExtraction({
