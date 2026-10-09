@@ -1,0 +1,47 @@
+{
+  "job-count": 3,
+  "jobs": [
+    {
+      "id": 1001,
+      "url": "https://remotive.com/remote-jobs/software-dev/backend-engineer-1001",
+      "title": "Backend Engineer",
+      "company_name": "Remote Co",
+      "category": "Software Development",
+      "tags": [
+        "Python",
+        "Django"
+      ],
+      "job_type": "full_time",
+      "publication_date": "2026-10-02T09:15:00",
+      "candidate_required_location": "Worldwide",
+      "salary": "$100k-$140k",
+      "description": "Own backend systems."
+    },
+    {
+      "id": 1002,
+      "url": "https://remotive.com/remote-jobs/product/product-manager-1002",
+      "title": "Product Manager",
+      "company_name": "Remote Product",
+      "category": "Product",
+      "tags": [],
+      "job_type": "contract",
+      "publication_date": "2026-08-01T00:00:00",
+      "candidate_required_location": "Europe",
+      "description": "Too old if the date were authoritative, but Remotive naive dates are retained as unknown."
+    },
+    {
+      "id": 1001,
+      "url": "https://remotive.com/remote-jobs/software-dev/backend-engineer-1001-duplicate",
+      "title": "Backend Engineer duplicate",
+      "company_name": "Remote Co",
+      "category": "Software Development",
+      "tags": [
+        "Python"
+      ],
+      "job_type": "full_time",
+      "publication_date": "2026-10-02T09:15:00",
+      "candidate_required_location": "Worldwide",
+      "description": "Duplicate id should dedup."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "requestedUrl": "https://market.fabrikant.ru/purchase_notice/view?id=01m48rrgwthw8m2aph3062hgbt",
+  "finalUrl": "https://market.fabrikant.ru/purchase_notice/view?id=01m48rrgwthw8m2aph3062hgbt",
+  "checkedAt": "2026-10-06T15:00:17.468Z",
+  "sha256": "19c7d58d739231191917189cea3b83044fa340341393b1cad3b8bfa58921bba5",
+  "bytes": 1251,
+  "title": "⠀",
+  "h1": "",
+  "body": "",
+  "scriptUrls": [
+    "polyfills-es5.e9f215f571ec9e15f485.js",
+    "polyfills-es2015.0d319bc242da6a64fcfa.js",
+    "scripts.e3234b525f21c274cf25.js",
+    "main-es2015.b4d7fa259b78c2098698.js",
+    "main-es5.b4d7fa259b78c2098698.js"
+  ]
+}

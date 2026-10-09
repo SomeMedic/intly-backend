@@ -1,0 +1,28 @@
+{
+  "response": {
+    "regions": [
+      {
+        "id": 3,
+        "name": "Москва",
+        "domain": "www"
+      },
+      {
+        "id": 4,
+        "name": "Санкт-Петербург",
+        "domain": "spb"
+      },
+      {
+        "id": 104,
+        "name": "Волгоград",
+        "domain": "volgograd"
+      },
+      {
+        "id": 481,
+        "name": "Казань",
+        "domain": "kazan"
+      }
+    ],
+    "total": 4
+  },
+  "request_id": 42424242
+}

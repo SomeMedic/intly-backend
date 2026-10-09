@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: Angie
+Date: Mon, 05 Oct 2026 02:27:01 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Cache-Control: max-age=900, public
+X-UA-Compatible: IE=edge
+Content-language: ru
+X-Content-Type-Options: nosniff
+Expires: Mon, 05 Oct 2026 02:42:01 GMT
+X-Cache-Status: MISS
+Set-Cookie: 11a0d84ae2472a9dff73ec72bf9debbe=0df0b5acb8f01a5f6e718463609dfb89; path=/; HttpOnly
+Cache-control: private
+Strict-Transport-Security: max-age=60480000
+X-Request-ID: b70aeaf19f05e43ab1a01289a1835bd1
+Set-Cookie: cookiesession1=678A3E18DAAAFA0791789C36B3D97F27;Expires=Tue, 05 Oct 2027 02:27:01 GMT;Path=/;HttpOnly
+content-length: 86725
+

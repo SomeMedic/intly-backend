@@ -1,0 +1,74 @@
+{
+  "name": "intly-backend",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.11.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "argon2",
+      "onnxruntime-node",
+      "protobufjs",
+      "tesseract.js"
+    ]
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "ts-node --transpile-only src/main.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/main.js",
+    "worker": "node dist/worker.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "node --test test/*.test.mjs",
+    "openapi": "node dist/scripts/openapi.js"
+  },
+  "dependencies": {
+    "@ai-sdk/deepseek": "^3.0.58",
+    "@ai-sdk/google": "^4.0.87",
+    "@ai-sdk/openai": "^4.0.83",
+    "@huggingface/transformers": "^4.3.0",
+    "@nestjs/common": "^12.1.2",
+    "@nestjs/config": "^12.0.1",
+    "@nestjs/core": "^12.1.2",
+    "@nestjs/jwt": "^12.0.2",
+    "@nestjs/mongoose": "latest",
+    "@nestjs/platform-express": "^12.1.2",
+    "@nestjs/swagger": "^12.0.2",
+    "ai": "^7.0.127",
+    "argon2": "^0.44.0",
+    "bullmq": "^5.58.0",
+    "cheerio": "^1.2.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "fast-xml-parser": "^5.11.2",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.7.0",
+    "mammoth": "^1.13.0",
+    "meilisearch": "^0.62.0",
+    "minio": "^8.0.7",
+    "mongoose": "^9.10.3",
+    "nestjs-pino": "^5.3.0",
+    "pdf-parse": "^2.4.5",
+    "pino": "^10.4.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "teleproto": "^1.229.1",
+    "tesseract.js": "^7.0.0",
+    "undici": "^8.11.2",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.18.0",
+    "eslint": "^10.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.42.0"
+  }
+}

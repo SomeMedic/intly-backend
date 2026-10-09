@@ -1,0 +1,75 @@
+{
+  "source": "Readonly persisted original Fabrikant checkpoint; public retained native catalog cards only",
+  "runId": "8963966e-4305-446f-9ad2-1175c56bc5f0",
+  "checkpointHash": "3abd2a56356db6041cd3cec047e8d706437ec1e5f8be48b3d3a052b2f83d5e5c",
+  "windowSince": "2026-09-06T14:40:27.721Z",
+  "windowUntil": "2026-10-06T14:40:27.721Z",
+  "cards": [
+    {
+      "card": {
+        "id": "679731410",
+        "procedureNumber": "3502514",
+        "lotNumber": null,
+        "title": "Поставка компрессорного оборудования производства Atlas Copco",
+        "text": "Мониторинг цен№ 3502514Идёт приём заявокЗакупки РосатомПоставка компрессорного оборудования производства Atlas CopcoОрганизаторАКЦИОНЕРНОЕ ОБЩЕСТВО \"СТЕКЛОНИТ\"Дата публикации06.10.2026 16:18Цена не указанаБесплатное участие",
+        "url": "https://www.fabrikant.ru/trades/atom/PriceMonitoring/?action=view&id=1023770",
+        "nativeBadges": [
+          "Идёт приём заявок",
+          "Закупки Росатом"
+        ],
+        "nativeStatus": "Идёт приём заявок",
+        "section": "Закупки Росатом",
+        "organizer": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"СТЕКЛОНИТ\"",
+        "publishedText": "06.10.2026 16:18",
+        "deadlineText": null,
+        "priceText": "Цена не указана",
+        "participationText": "Бесплатное участие"
+      },
+      "catalogUrl": "https://www.fabrikant.ru/procedure/search?date_publication_from=2026-10-06&date_publication_to=2026-10-06&page_limit=40&page_number=4"
+    },
+    {
+      "card": {
+        "id": "679731408",
+        "procedureNumber": "3502513",
+        "lotNumber": null,
+        "title": "Комплектующие для изготовления рамы для механических испытаний двухпролетных моделей ТВС",
+        "text": "Мониторинг цен№ 3502513Идёт приём заявокЗакупки РосатомКомплектующие для изготовления рамы для механических испытаний двухпролетных моделей ТВСОрганизаторАкционерное общество \"Ордена Трудового Красного Знамени и ордена труда ЧССР опытное конструкторское бюро \"ГИДРОПРЕСС\"Дата публикации06.10.2026 16:18Цена не указанаБесплатное участие",
+        "url": "https://www.fabrikant.ru/trades/atom/PriceMonitoring/?action=view&id=1023769",
+        "nativeBadges": [
+          "Идёт приём заявок",
+          "Закупки Росатом"
+        ],
+        "nativeStatus": "Идёт приём заявок",
+        "section": "Закупки Росатом",
+        "organizer": "Акционерное общество \"Ордена Трудового Красного Знамени и ордена труда ЧССР опытное конструкторское бюро \"ГИДРОПРЕСС\"",
+        "publishedText": "06.10.2026 16:18",
+        "deadlineText": null,
+        "priceText": "Цена не указана",
+        "participationText": "Бесплатное участие"
+      },
+      "catalogUrl": "https://www.fabrikant.ru/procedure/search?date_publication_from=2026-10-06&date_publication_to=2026-10-06&page_limit=40&page_number=4"
+    },
+    {
+      "card": {
+        "id": "679731405",
+        "procedureNumber": "3502512",
+        "lotNumber": null,
+        "title": "Передача права на использование обновления и сертификата технической поддержки InfoWatch Traffic Monitor Enterprise Edition",
+        "text": "Мониторинг цен№ 3502512Идёт приём заявокЗакупки РосатомПередача права на использование обновления и сертификата технической поддержки InfoWatch Traffic Monitor Enterprise EditionОрганизаторАКЦИОНЕРНОЕ ОБЩЕСТВО \"ИНЖИНИРИНГОВАЯ КОМПАНИЯ \"АЭМ-ТЕХНОЛОГИИ\"Дата публикации06.10.2026 16:18Цена не указанаБесплатное участие",
+        "url": "https://www.fabrikant.ru/trades/atom/PriceMonitoring/?action=view&id=1023768",
+        "nativeBadges": [
+          "Идёт приём заявок",
+          "Закупки Росатом"
+        ],
+        "nativeStatus": "Идёт приём заявок",
+        "section": "Закупки Росатом",
+        "organizer": "АКЦИОНЕРНОЕ ОБЩЕСТВО \"ИНЖИНИРИНГОВАЯ КОМПАНИЯ \"АЭМ-ТЕХНОЛОГИИ\"",
+        "publishedText": "06.10.2026 16:18",
+        "deadlineText": null,
+        "priceText": "Цена не указана",
+        "participationText": "Бесплатное участие"
+      },
+      "catalogUrl": "https://www.fabrikant.ru/procedure/search?date_publication_from=2026-10-06&date_publication_to=2026-10-06&page_limit=40&page_number=4"
+    }
+  ]
+}

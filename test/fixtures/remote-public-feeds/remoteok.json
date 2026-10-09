@@ -1,0 +1,78 @@
+[
+  {
+    "legal": "remoteok public api metadata",
+    "last_updated": "2026-10-04T10:00:00Z"
+  },
+  {
+    "id": "remote-new",
+    "position": "Senior Backend Engineer",
+    "company": "Acme Remote",
+    "description": "Build public APIs.",
+    "url": "https://remoteok.com/remote-jobs/remote-new",
+    "date": "2026-10-01T12:00:00+00:00",
+    "tags": [
+      "node",
+      "typescript"
+    ],
+    "location": "Worldwide",
+    "salary_min": 0,
+    "salary_max": 0
+  },
+  {
+    "id": "remote-paid",
+    "title": "Platform Engineer",
+    "company": "Pay Co",
+    "description": "Operate infrastructure.",
+    "apply_url": "https://remoteok.com/l/remote-paid",
+    "date": "2026-09-10T08:30:00+00:00",
+    "tags": [
+      "go"
+    ],
+    "location": "Europe",
+    "salary_min": 120000,
+    "salary_max": 180000
+  },
+  {
+    "id": "remote-epoch",
+    "position": "Epoch Dated Engineer",
+    "company": "Epoch Co",
+    "description": "Native epoch proves instant.",
+    "url": "https://remoteok.com/remote-jobs/remote-epoch",
+    "epoch": 1790000000,
+    "tags": [
+      "rust"
+    ],
+    "location": "Remote"
+  },
+  {
+    "id": "remote-naive",
+    "position": "Naive Date Engineer",
+    "company": "Naive Co",
+    "description": "Naive date remains unknown-date cohort.",
+    "url": "https://remoteok.com/remote-jobs/remote-naive",
+    "date": "2026-08-01T00:00:00",
+    "tags": [],
+    "location": ""
+  },
+  {
+    "id": "remote-old",
+    "position": "Old Engineer",
+    "description": "Too old.",
+    "url": "https://remoteok.com/remote-jobs/remote-old",
+    "date": "2026-08-01T00:00:00+00:00"
+  },
+  {
+    "id": "remote-unknown",
+    "position": "Unknown Date Engineer",
+    "description": "No date but valid public payload.",
+    "url": "https://remoteok.com/remote-jobs/remote-unknown",
+    "tags": []
+  },
+  {
+    "id": "remote-new",
+    "position": "Duplicate Senior Backend Engineer",
+    "description": "Duplicate id should dedup.",
+    "url": "https://remoteok.com/remote-jobs/remote-new",
+    "date": "2026-10-01T12:00:00+00:00"
+  }
+]

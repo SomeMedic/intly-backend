@@ -1,0 +1,1230 @@
+{
+  "total": 372,
+  "jobPostings": [
+    {
+      "title": "Principal Managing Partner - Industry Capabilities",
+      "externalPath": "/job/USA-NY-New-York-City/Principal-Managing-Partner---Healthcare_JR-0107491",
+      "locationsText": "9 Locations",
+      "postedOn": "Posted Yesterday",
+      "remoteType": "Flex",
+      "bulletFields": [
+        "JR-0107491"
+      ]
+    },
+    {
+      "title": "Sr. Solution Architect, Enterprise Applications",
+      "externalPath": "/job/USA-CA-Pleasanton/Sr-Solution-Architect--Enterprise-Applications_JR-IC-000076-1",
+      "locationsText": "USA, CA, Pleasanton",
+      "postedOn": "Posted 2 Days Ago",
+      "remoteType": "Flex",
+      "bulletFields": [
+        "JR-IC-000076"
+      ]
+    },
+    {
+      "title": "Senior Sourcing Manager",
+      "externalPath": "/job/USA-UT-Salt-Lake-City/Senior-Sourcing-Manager_JR-0109813",
+      "locationsText": "2 Locations",
+      "postedOn": "Posted 2 Days Ago",
+      "remoteType": "Flex",
+      "bulletFields": [
+        "JR-0109813"
+      ]
+    }
+  ],
+  "facets": [
+    {
+      "facetParameter": "remoteType",
+      "descriptor": "Remote Type",
+      "values": [
+        {
+          "descriptor": "Flex",
+          "id": "bf0480ca9d751000ea15bc9c334b0001",
+          "count": 325
+        },
+        {
+          "descriptor": "Onsite",
+          "id": "bf0480ca9d751000ea15bc0178070000",
+          "count": 36
+        },
+        {
+          "descriptor": "Remote",
+          "id": "bf0480ca9d751000ea15bc9c334b0000",
+          "count": 11
+        }
+      ]
+    },
+    {
+      "facetParameter": "Location_Country",
+      "descriptor": "Country / Territory",
+      "values": [
+        {
+          "descriptor": "United States of America",
+          "id": "bc33aa3152ec42d4995f4791a106ed09",
+          "count": 164
+        },
+        {
+          "descriptor": "Canada",
+          "id": "a30a87ed25634629aa6c3958aa2b91ea",
+          "count": 36
+        },
+        {
+          "descriptor": "Ireland",
+          "id": "04a05835925f45b3a59406a2a6b72c8a",
+          "count": 32
+        },
+        {
+          "descriptor": "India",
+          "id": "c4f78be1a8f14da0ab49ce1162348a5e",
+          "count": 23
+        },
+        {
+          "descriptor": "United Kingdom",
+          "id": "29247e57dbaf46fb855b224e03170bc7",
+          "count": 22
+        },
+        {
+          "descriptor": "Australia",
+          "id": "d903bb3fedad45039383f6de334ad4db",
+          "count": 17
+        },
+        {
+          "descriptor": "Poland",
+          "id": "131d5ac7e3ee4d7b962bdc96e498e412",
+          "count": 14
+        },
+        {
+          "descriptor": "Costa Rica",
+          "id": "99abe7e6bb3f4c108aebebf01a369ec5",
+          "count": 11
+        },
+        {
+          "descriptor": "Japan",
+          "id": "8b705da2becf43cfaccc091da0988ab2",
+          "count": 10
+        },
+        {
+          "descriptor": "Germany",
+          "id": "dcc5b7608d8644b3a93716604e78e995",
+          "count": 9
+        },
+        {
+          "descriptor": "France",
+          "id": "54c5b6971ffb4bf0b116fe7651ec789a",
+          "count": 9
+        },
+        {
+          "descriptor": "Israel",
+          "id": "084562884af243748dad7c84c304d89a",
+          "count": 8
+        },
+        {
+          "descriptor": "Singapore",
+          "id": "80938777cac5440fab50d729f9634969",
+          "count": 8
+        },
+        {
+          "descriptor": "Sweden",
+          "id": "6a800a4736884df5826858d435650f45",
+          "count": 8
+        },
+        {
+          "descriptor": "Italy",
+          "id": "8cd04a563fd94da7b06857a79faaf815",
+          "count": 6
+        },
+        {
+          "descriptor": "Spain",
+          "id": "bd34c524a6a04ae6915f5d96fa086199",
+          "count": 5
+        },
+        {
+          "descriptor": "Netherlands",
+          "id": "9696868b09c64d52a62ee13b052383cc",
+          "count": 5
+        },
+        {
+          "descriptor": "Hong Kong",
+          "id": "d4afdeb461d446e4babd204bd102dba8",
+          "count": 4
+        },
+        {
+          "descriptor": "New Zealand",
+          "id": "55273a1b49934d97ae15342ef51f6b95",
+          "count": 4
+        },
+        {
+          "descriptor": "Vietnam",
+          "id": "db69e8c8446c11de98360015c5e6daf6",
+          "count": 4
+        },
+        {
+          "descriptor": "Mexico",
+          "id": "e2adff9272454660ac4fdb56fc70bb51",
+          "count": 3
+        },
+        {
+          "descriptor": "Taiwan",
+          "id": "a4e08b475d6a4176853c9d1cb9854e02",
+          "count": 2
+        },
+        {
+          "descriptor": "Malaysia",
+          "id": "972dc4ba8d454bc0b893ff84b1529077",
+          "count": 2
+        },
+        {
+          "descriptor": "Korea, Republic of",
+          "id": "7a5a2aadf9d34086a2bfbfd408bc28da",
+          "count": 2
+        },
+        {
+          "descriptor": "Czechia",
+          "id": "fc078443155c4ad294201ecf5a61a499",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "facetParameter": "jobFamilyGroup",
+      "descriptor": "Job Category",
+      "values": [
+        {
+          "descriptor": "Product Development and Engineering",
+          "id": "8c5ce7a1cffb43e0a819c249a49fcb00",
+          "count": 112
+        },
+        {
+          "descriptor": "Professional Services",
+          "id": "77a05bb4c4cf4a52811b27be551acc05",
+          "count": 83
+        },
+        {
+          "descriptor": "Field Sales",
+          "id": "062b0d5da46f4ad0a5c33d0bf35ea82b",
+          "count": 45
+        },
+        {
+          "descriptor": "Product Strategy and Management",
+          "id": "3745527d2b3049a889f9cec4740ae41c",
+          "count": 22
+        },
+        {
+          "descriptor": "GTM Operations",
+          "id": "51281242d6d541cd9e3635d18e5fb13a",
+          "count": 18
+        },
+        {
+          "descriptor": "Information Systems",
+          "id": "11d42f4a487c46b9b29ab3e087c2f5ca",
+          "count": 16
+        },
+        {
+          "descriptor": "Project / Program Management and Business Operations",
+          "id": "e1c657855a9e42798530eb3c563d7ff6",
+          "count": 11
+        },
+        {
+          "descriptor": "Field Services",
+          "id": "911b0b05a21601a053956c8f020a7e75",
+          "count": 9
+        },
+        {
+          "descriptor": "Customer Support",
+          "id": "1b6c9bcfb6e0472c89d87ac2cb99207b",
+          "count": 9
+        },
+        {
+          "descriptor": "Business Development / Alliances",
+          "id": "931e1dc7606f102c5d87ab30733414af",
+          "count": 8
+        },
+        {
+          "descriptor": "Engineering Operations and Services",
+          "id": "a88cba90a00841e0b750341c541b9d56",
+          "count": 8
+        },
+        {
+          "descriptor": "Finance",
+          "id": "acecdfaf8f80489d9f68b239037085d9",
+          "count": 8
+        },
+        {
+          "descriptor": "Data Science, Business Intelligence and Analytics",
+          "id": "4b2f970c50930155b9985193020a0c72",
+          "count": 6
+        },
+        {
+          "descriptor": "Legal and Compliance",
+          "id": "2dc0339bb38845849409e56c541f4d35",
+          "count": 5
+        },
+        {
+          "descriptor": "Marketing",
+          "id": "4b483fd6c77749ce8e175a276724561a",
+          "count": 4
+        },
+        {
+          "descriptor": "Training and Education",
+          "id": "a7a82858f03f4562b76180b2367d56bd",
+          "count": 3
+        },
+        {
+          "descriptor": "Human Resources",
+          "id": "6d362dfe61a34bc39a2cc1327c984649",
+          "count": 2
+        },
+        {
+          "descriptor": "Procurement",
+          "id": "e12484d5edca01de65a56192020ac374",
+          "count": 2
+        },
+        {
+          "descriptor": "University",
+          "id": "dd63f176157f01fa53c5becefe680ce3",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "facetParameter": "Location_Region_State_Province",
+      "descriptor": "State",
+      "values": [
+        {
+          "descriptor": "California",
+          "id": "ec3d210e4240442e99a28fa70419aec5",
+          "count": 90
+        },
+        {
+          "descriptor": "Virginia",
+          "id": "e0889a76c58d4fff9b54b80dadc49000",
+          "count": 55
+        },
+        {
+          "descriptor": "Georgia",
+          "id": "dec8eabbb13d45bdb159b8e25d896110",
+          "count": 42
+        },
+        {
+          "descriptor": "British Columbia",
+          "id": "cb76ca97a13347548a188f23caa96b17",
+          "count": 32
+        },
+        {
+          "descriptor": "Colorado",
+          "id": "a83d6eabae3b49718c4ce09eeb66fd0b",
+          "count": 27
+        },
+        {
+          "descriptor": "Mahārāshtra",
+          "id": "a3c37012f51642f4a7b3dafc8ac37801",
+          "count": 23
+        },
+        {
+          "descriptor": "Illinois",
+          "id": "d8bb292ed9fe44a2899a990ad569538c",
+          "count": 22
+        },
+        {
+          "descriptor": "Utah",
+          "id": "9bf006cfb5a44c51b84138e1a0e7d805",
+          "count": 17
+        },
+        {
+          "descriptor": "Victoria",
+          "id": "ab28d9dc175e444fa11c7c0f28f52e2c",
+          "count": 16
+        },
+        {
+          "descriptor": "New South Wales",
+          "id": "c7cff0e46d864ae49ef40b4ba71e7e5c",
+          "count": 16
+        },
+        {
+          "descriptor": "New York",
+          "id": "9819bf0148e54f89adb255aa7bead635",
+          "count": 15
+        },
+        {
+          "descriptor": "Texas",
+          "id": "fc77e3a1ab36487f9646d14f7242dd77",
+          "count": 14
+        },
+        {
+          "descriptor": "Massachusetts",
+          "id": "c66d738416b74fb180376cf59cc7ec8f",
+          "count": 13
+        },
+        {
+          "descriptor": "Heredia",
+          "id": "13f1450c04904e9f9bbc7e10a10aacd6",
+          "count": 11
+        },
+        {
+          "descriptor": "Tokyo",
+          "id": "6534030e79d54ac897646438ed66ac9a",
+          "count": 9
+        },
+        {
+          "descriptor": "Washington",
+          "id": "de9b48948ef8421db97ddf4ea206e931",
+          "count": 9
+        },
+        {
+          "descriptor": "Minnesota",
+          "id": "02f3984b69ba450080e456fe733f6741",
+          "count": 9
+        },
+        {
+          "descriptor": "Oregon",
+          "id": "6fcc4198762c4a7c807486c849fe94dd",
+          "count": 8
+        },
+        {
+          "descriptor": "Stockholm County",
+          "id": "e6ba1942c53645958c2958bbd17e1d1d",
+          "count": 8
+        },
+        {
+          "descriptor": "Arizona",
+          "id": "c7b20b0d4bc04711a00900569e9afabd",
+          "count": 6
+        },
+        {
+          "descriptor": "Milano",
+          "id": "15666db5b54343c1ac41344d81e951eb",
+          "count": 6
+        },
+        {
+          "descriptor": "Ontario",
+          "id": "218a720b28a74c67b5c6d42c00bdadfa",
+          "count": 5
+        },
+        {
+          "descriptor": "Đà Nẵng",
+          "id": "6e1515dce0d8478a801e23a5e7d7e93d",
+          "count": 4
+        },
+        {
+          "descriptor": "Ohio",
+          "id": "41493c81d9214eb190fd14067c7d974d",
+          "count": 3
+        },
+        {
+          "descriptor": "Maryland",
+          "id": "586509e6daa741808206b095fee97e8f",
+          "count": 3
+        },
+        {
+          "descriptor": "Jalisco",
+          "id": "34e05bc8deff49e2ba1f7365c5a59b8b",
+          "count": 3
+        },
+        {
+          "descriptor": "Queensland",
+          "id": "fe22ac414d814113b975e4944a564b13",
+          "count": 3
+        },
+        {
+          "descriptor": "Australian Capital Territory",
+          "id": "84a282321f50441a8fe36040f9b90027",
+          "count": 3
+        },
+        {
+          "descriptor": "Taipei City",
+          "id": "c5684b475b7345d0839454b2a03c5d2d",
+          "count": 2
+        },
+        {
+          "descriptor": "Ciudad de Mexico",
+          "id": "d22bee76e28110000edbaff29a73005a",
+          "count": 2
+        },
+        {
+          "descriptor": "North Carolina",
+          "id": "1486a0a4a8464c3b9ec482d4038deb99",
+          "count": 2
+        },
+        {
+          "descriptor": "Wilayah Persekutuan Kuala Lumpur",
+          "id": "d05fe10b38264230958a4167487a6d60",
+          "count": 2
+        },
+        {
+          "descriptor": "District of Columbia",
+          "id": "0d2bcd0308f541938f3ae29e7cc69ae0",
+          "count": 2
+        },
+        {
+          "descriptor": "Quebec",
+          "id": "ef8a53af14534128b795fd55d75ec08b",
+          "count": 2
+        },
+        {
+          "descriptor": "Karnātaka",
+          "id": "701eb5584934425d930bc84b9e8b04eb",
+          "count": 1
+        },
+        {
+          "descriptor": "Delhi",
+          "id": "a1dd3300691e478c83f6632acd616705",
+          "count": 1
+        },
+        {
+          "descriptor": "Alberta",
+          "id": "588eb24f950e4c5b93d5ad3f37aebad2",
+          "count": 1
+        },
+        {
+          "descriptor": "Nevada",
+          "id": "33e7c3874e0e4d28a8047926aa4a1d21",
+          "count": 1
+        },
+        {
+          "descriptor": "Florida",
+          "id": "9c1a239b35bd4598856e5393b249b8a1",
+          "count": 1
+        },
+        {
+          "descriptor": "Osaka",
+          "id": "90d84369498c480895f7c7f495000381",
+          "count": 1
+        },
+        {
+          "descriptor": "Connecticut",
+          "id": "bffb3e4c9a4a4542bc6bd075a4c26247",
+          "count": 1
+        },
+        {
+          "descriptor": "Arkansas",
+          "id": "cea6c5355e1b4983b5fd0640310385b5",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "facetParameter": "timeType",
+      "descriptor": "Time Type",
+      "values": [
+        {
+          "descriptor": "Full Time",
+          "id": "f6404bba2875449e95d59087966ee190",
+          "count": 372
+        }
+      ]
+    },
+    {
+      "facetParameter": "locationMainGroup",
+      "values": [
+        {
+          "facetParameter": "locations",
+          "descriptor": "Locations",
+          "values": [
+            {
+              "descriptor": "AUS.ACT.Barton",
+              "id": "a048b334f51f01613b462e563108425e",
+              "count": 3
+            },
+            {
+              "descriptor": "Australia, NSW, North Sydney",
+              "id": "cd25b32466bf4d9cb69fae6bf773a59b",
+              "count": 16
+            },
+            {
+              "descriptor": "Australia, QLD, Brisbane",
+              "id": "c187447ec872010a71d564522c0a8fc5",
+              "count": 3
+            },
+            {
+              "descriptor": "Australia, VIC, Melbourne",
+              "id": "a9fbad9e072a10301234f9571314aa9c",
+              "count": 16
+            },
+            {
+              "descriptor": "Canada, AB, Calgary",
+              "id": "1e8d39d4bd5e1038797a85846867e02b",
+              "count": 1
+            },
+            {
+              "descriptor": "Canada, BC, Vancouver",
+              "id": "2dbd309d3ef64fffb7131f8b596a774a",
+              "count": 32
+            },
+            {
+              "descriptor": "Canada, BC, Victoria",
+              "id": "94e1ff8265501022d0b83314f92ca891",
+              "count": 1
+            },
+            {
+              "descriptor": "Canada, ON, Toronto",
+              "id": "c28a9b0ba3cb456faa63d06f7b348b9a",
+              "count": 5
+            },
+            {
+              "descriptor": "Canada, QC, Montreal",
+              "id": "ac0c421b3a77434f8173f552893f9be2",
+              "count": 2
+            },
+            {
+              "descriptor": "Costa Rica",
+              "id": "456bfbd0d1aa100170d2004aa5180000",
+              "count": 11
+            },
+            {
+              "descriptor": "Czech Republic, Prague",
+              "id": "872fcf057c69018160fd33bbaf192745",
+              "count": 1
+            },
+            {
+              "descriptor": "DC.Atlanta",
+              "id": "527f678b4fcc4584a506e3ad24039d81",
+              "count": 2
+            },
+            {
+              "descriptor": "DEU, Remote",
+              "id": "4d3a30f878c5011d15d4af2b41ad0000",
+              "count": 2
+            },
+            {
+              "descriptor": "France, Paris",
+              "id": "5f1483baa5e24931b2ca8238881ff71a",
+              "count": 9
+            },
+            {
+              "descriptor": "Germany, Berlin",
+              "id": "792a5d2a7dc601f7c913f189d40dd9cd",
+              "count": 7
+            },
+            {
+              "descriptor": "Germany, Frankfurt",
+              "id": "0ee6a30cb72c104e8c395ab2ef905b9e",
+              "count": 3
+            },
+            {
+              "descriptor": "Germany, Hamburg",
+              "id": "e2eafa2ef9c201a32a7b86bb7714e1ac",
+              "count": 1
+            },
+            {
+              "descriptor": "Germany, Munich",
+              "id": "51be8165eefb42598a3166350f56f9e6",
+              "count": 9
+            },
+            {
+              "descriptor": "Hong Kong",
+              "id": "ba737f34c8574835ad0ff9b99000cac9",
+              "count": 4
+            },
+            {
+              "descriptor": "IND.BLR.Home Office",
+              "id": "d345cd358cc510010d23601b85bc0000",
+              "count": 1
+            },
+            {
+              "descriptor": "IND.DEL.Home Office",
+              "id": "54c7a76610eb10010ce7aeae74c50000",
+              "count": 1
+            },
+            {
+              "descriptor": "IND.Pune",
+              "id": "91e43cc2ca1a01d1a4aa05e58d0e252b",
+              "count": 20
+            },
+            {
+              "descriptor": "India, Mumbai",
+              "id": "7ecbc1538793012027ee42c91e96aee6",
+              "count": 4
+            },
+            {
+              "descriptor": "Ireland, Dublin",
+              "id": "897a567159c310266e68659866e48c82",
+              "count": 29
+            },
+            {
+              "descriptor": "IRL.Dublin.College Square",
+              "id": "c5c97fa632d0100119a90da5edda0000",
+              "count": 1
+            },
+            {
+              "descriptor": "IRL.Dublin.Dockline",
+              "id": "3da90299d915010a08fad611a87a0000",
+              "count": 4
+            },
+            {
+              "descriptor": "Israel, Tel Aviv",
+              "id": "8aea4ea7838d10005b4e69cb69830000",
+              "count": 8
+            },
+            {
+              "descriptor": "Italy, Milan",
+              "id": "6666d5e0761310348049c49e07ebac6c",
+              "count": 6
+            },
+            {
+              "descriptor": "Japan, Tokyo",
+              "id": "9248082dd0ba104584ac4b3d9356363b",
+              "count": 9
+            },
+            {
+              "descriptor": "JPN.Osaka",
+              "id": "fd77c3fbf03c10005433c04711d20000",
+              "count": 1
+            },
+            {
+              "descriptor": "Korea, Seoul",
+              "id": "4b403f6aebb510496d7d9d2600206f94",
+              "count": 2
+            },
+            {
+              "descriptor": "Malaysia, Kuala Lumpur",
+              "id": "3168012046ad10f79487acb92124e0e5",
+              "count": 2
+            },
+            {
+              "descriptor": "MEX.Mexico City",
+              "id": "6b4305cbbf1d01bf3b807cc3a20a5b4e",
+              "count": 2
+            },
+            {
+              "descriptor": "MEX.Zapopan",
+              "id": "0090ef25c6de1016e4dce0db78210000",
+              "count": 3
+            },
+            {
+              "descriptor": "Netherlands, Amsterdam",
+              "id": "e3b0f9245bbd10a76928d9d0921c99dd",
+              "count": 5
+            },
+            {
+              "descriptor": "New Zealand, Auckland",
+              "id": "682482fce5d010d345749e57bdc43de3",
+              "count": 4
+            },
+            {
+              "descriptor": "POL, Remote",
+              "id": "7ae44bd8a8dd011d159b1b9ce46e0000",
+              "count": 4
+            },
+            {
+              "descriptor": "Poland, Home Office",
+              "id": "1e8d39d4bd5e1038743f0cc5e727aa9e",
+              "count": 1
+            },
+            {
+              "descriptor": "Poland, Warsaw",
+              "id": "e6c0ef18e98610cd2ce82be501346424",
+              "count": 14
+            },
+            {
+              "descriptor": "Singapore",
+              "id": "85a05eb6af5b4562bcd9490a0f696374",
+              "count": 8
+            },
+            {
+              "descriptor": "Spain, Madrid",
+              "id": "1101bfe6c30210538b3da7a5c6d81609",
+              "count": 5
+            },
+            {
+              "descriptor": "Sweden, Stockholm",
+              "id": "8e1d9053f6cf1000992249c9cb8b0000",
+              "count": 8
+            },
+            {
+              "descriptor": "Taiwan, Taipei",
+              "id": "5a97e26242ea010a525c124015f80000",
+              "count": 2
+            },
+            {
+              "descriptor": "United Kingdom, London",
+              "id": "5a54347fd1fa496e9c9e50e5d982de1d",
+              "count": 16
+            },
+            {
+              "descriptor": "United Kingdom, London",
+              "id": "f4a20e09049f100099e310b3f0520000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, AK, Remote",
+              "id": "ee00a5e27c4d011d159b64d2ff450000",
+              "count": 4
+            },
+            {
+              "descriptor": "USA, AL, Remote",
+              "id": "79dc078ddcd3011d15d6d239229d0000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, AR, Home Office",
+              "id": "0e090cb3a74b49f58de3646c229bcc9e",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, AR, Remote",
+              "id": "4d3a30f878c5011d15d64785d8120000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, AZ, Home Office",
+              "id": "4983e90db705492cbf3ca89407bf04e3",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, AZ, Remote",
+              "id": "7ae44bd8a8dd011d159b9178d7bd0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, AZ, Scottsdale",
+              "id": "9197fb1d532c10011302bd3784b20000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, CA, Home Office",
+              "id": "240a00b19dce4e668609fd4b8e601b16",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, CA, Pleasanton",
+              "id": "5e834d290de7475ba43b61959f6a9d1c",
+              "count": 72
+            },
+            {
+              "descriptor": "USA, CA, Remote",
+              "id": "3ab10dbed327011d15aeab6561190000",
+              "count": 11
+            },
+            {
+              "descriptor": "USA, CA, San Francisco",
+              "id": "289a125164674dd28c79bc9bb7e46fd8",
+              "count": 16
+            },
+            {
+              "descriptor": "USA, CA, Santa Clara",
+              "id": "596390633720100341633e7b972a0000",
+              "count": 10
+            },
+            {
+              "descriptor": "USA, CA Bay Area, Remote",
+              "id": "03ad8e81362b011d159b7d3e10170000",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, CO, Boulder",
+              "id": "9821e80f698e10fe45f138d1947cc62f",
+              "count": 24
+            },
+            {
+              "descriptor": "USA, CO, Denver",
+              "id": "3a7c96b9fb264d0492ef8899556f58a7",
+              "count": 12
+            },
+            {
+              "descriptor": "USA, CO, Remote",
+              "id": "736640bb717f011b73548fe890740000",
+              "count": 5
+            },
+            {
+              "descriptor": "USA, CT, Home Office",
+              "id": "a035ee6577fc48d1af4df9036ec9adb8",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, CT, Remote",
+              "id": "3ab10dbed327011d15aec723e0a00000",
+              "count": 9
+            },
+            {
+              "descriptor": "USA, DC, Home Office",
+              "id": "f4b2b5a43c0f106b00729e09a55efebe",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, DC, Remote",
+              "id": "4e31200cd95b011d1599e64428670000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, DC, Washington",
+              "id": "69215270bfe9018bdcf7a9f06f0b87e5",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, DE, Remote",
+              "id": "79dc078ddcd3011d15d736bf3eaa0000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, FL, Home Office",
+              "id": "6da0ce9c09e74185b79a3301cc0b8be0",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, FL, Remote",
+              "id": "79dc078ddcd3011d15d744139a6a0000",
+              "count": 8
+            },
+            {
+              "descriptor": "USA, GA, Atlanta",
+              "id": "09149267bc324fccba44db134da36767",
+              "count": 42
+            },
+            {
+              "descriptor": "USA, GA, Remote",
+              "id": "03ad8e81362b011d159bc35e70f00000",
+              "count": 10
+            },
+            {
+              "descriptor": "USA, HI, Remote",
+              "id": "7ae44bd8a8dd011d159c01e6c2650000",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, IA, Remote",
+              "id": "79dc078ddcd3011d15d76e7f0e3e0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, ID, Remote",
+              "id": "ee00a5e27c4d011d159c1d8b065d0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, IL, Chicago",
+              "id": "e0e149b40d964e5fb845f6087d90a63c",
+              "count": 22
+            },
+            {
+              "descriptor": "USA, IL, Remote",
+              "id": "4e31200cd95b011d159a481bb4f10000",
+              "count": 9
+            },
+            {
+              "descriptor": "USA, IN, Remote",
+              "id": "c52e16426e3c011d15d6fa804d440000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, KS, Remote",
+              "id": "4a495540e231011d159c978397110000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, KY, Remote",
+              "id": "03ad8e81362b011d159c27ab89450000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, LA, Remote",
+              "id": "79dc078ddcd3011d15d7c5ab662d0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, MA, Boston",
+              "id": "3156cbdb27884558ab0cd50910ec861d",
+              "count": 13
+            },
+            {
+              "descriptor": "USA, MA, Remote",
+              "id": "4d3a30f878c5011d15d73ba986380000",
+              "count": 9
+            },
+            {
+              "descriptor": "USA, MD, Home Office",
+              "id": "4141358d40464515a589a68260420d33",
+              "count": 3
+            },
+            {
+              "descriptor": "USA, MD, Remote",
+              "id": "4d3a30f878c5011d15d7497ff49c0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, ME, Remote",
+              "id": "4e31200cd95b011d159aae50da030000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, MI, Remote",
+              "id": "4a495540e231011d159cee8cd0dd0000",
+              "count": 4
+            },
+            {
+              "descriptor": "USA, MN, Minneapolis",
+              "id": "1f451b161f8b405487e7ebe5c0a13d6b",
+              "count": 9
+            },
+            {
+              "descriptor": "USA, MN, Remote",
+              "id": "03ad8e81362b011d159c7e2f176b0000",
+              "count": 8
+            },
+            {
+              "descriptor": "USA, MO, Remote",
+              "id": "ee00a5e27c4d011d159cbc275d320000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, MS, Remote",
+              "id": "79dc078ddcd3011d15d82a2e2fd10000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, MT, Remote",
+              "id": "4d3a30f878c5011d15d79f7f2bf10000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, NC, Home Office",
+              "id": "62ae58d9ae404d40b28739cc24b8da7c",
+              "count": 2
+            },
+            {
+              "descriptor": "USA, NC, Remote",
+              "id": "79dc078ddcd3011d15d8473fdd7d0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, ND, Remote",
+              "id": "4a495540e231011d159d4594be1f0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, NE, Remote",
+              "id": "ee00a5e27c4d011d159d04d458c20000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, NH, Remote",
+              "id": "3ab10dbed327011d15b01e3a24f30000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, NJ, Remote",
+              "id": "ee00a5e27c4d011d159d20a6bc6b0000",
+              "count": 10
+            },
+            {
+              "descriptor": "USA, NM, Remote",
+              "id": "79dc078ddcd3011d15d88d7355dc0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, NV, Incline Village",
+              "id": "ffecbec815df103777567d830e143315",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, NV, Remote",
+              "id": "4d3a30f878c5011d15d804851b860000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, NY, New York City",
+              "id": "84e4bb4fde894383a0dbe933bed4bfac",
+              "count": 11
+            },
+            {
+              "descriptor": "USA, NY, New York City",
+              "id": "e4328c07cac21000983dd34b05330000",
+              "count": 3
+            },
+            {
+              "descriptor": "USA, NY, Remote",
+              "id": "4e31200cd95b011d159b6b64027d0000",
+              "count": 10
+            },
+            {
+              "descriptor": "USA, OH, Mason",
+              "id": "38f95312dd0801086ee4722092580000",
+              "count": 3
+            },
+            {
+              "descriptor": "USA, OH, Remote",
+              "id": "3ab10dbed327011d15b0690b92090000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, OK, Remote",
+              "id": "79dc078ddcd3011d15d8ca05d3160000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, OR, Beaverton",
+              "id": "8368f8b8807f4f4eb52a11debc5dbc78",
+              "count": 8
+            },
+            {
+              "descriptor": "USA, OR, Remote",
+              "id": "ee00a5e27c4d011d159d790ec0780000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, PA, Remote",
+              "id": "4d3a30f878c5011d15d84d49396b0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, RI, Remote",
+              "id": "7ae44bd8a8dd011d159d95802f800000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, SC, Remote",
+              "id": "4a495540e231011d159df274b3d80000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, SD, Remote",
+              "id": "03ad8e81362b011d159d81f787790000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, TN, Remote",
+              "id": "3ab10dbed327011d15b0cbd4e8440000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, TX, Austin",
+              "id": "63f4787825e34e7489c2daf345a6eeca",
+              "count": 10
+            },
+            {
+              "descriptor": "USA, TX, Frisco",
+              "id": "8de299d6807c4b728fff741af567fdd2",
+              "count": 14
+            },
+            {
+              "descriptor": "USA, TX, Remote",
+              "id": "4e31200cd95b011d159bea564fcf0000",
+              "count": 11
+            },
+            {
+              "descriptor": "USA, UT, Remote",
+              "id": "4a495540e231011d159e2a1748d20000",
+              "count": 8
+            },
+            {
+              "descriptor": "USA, UT, Salt Lake City",
+              "id": "b9e1bd0308fa45c99ffb2a213df4ea89",
+              "count": 17
+            },
+            {
+              "descriptor": "USA, VA, Home Office",
+              "id": "ce658b58632a4c8992827bd20484110f",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, VA, McLean",
+              "id": "2213391f747b10c033902db2a95c0d54",
+              "count": 1
+            },
+            {
+              "descriptor": "USA, VA, Remote",
+              "id": "79dc078ddcd3011d15d948875a540000",
+              "count": 9
+            },
+            {
+              "descriptor": "USA, VT, Remote",
+              "id": "4a495540e231011d159e45e935560000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, WA, Remote",
+              "id": "4d3a30f878c5011d15d8cafbd5810000",
+              "count": 9
+            },
+            {
+              "descriptor": "USA, WA, Seattle",
+              "id": "62a48cfecb41101e2011999af07c4fdb",
+              "count": 9
+            },
+            {
+              "descriptor": "USA, WI, Remote",
+              "id": "3ab10dbed327011d15b12a84e99f0000",
+              "count": 7
+            },
+            {
+              "descriptor": "USA, WV, Remote",
+              "id": "4d3a30f878c5011d15d8f217ea260000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA, WY, Remote",
+              "id": "7ae44bd8a8dd011d159e3b5808f80000",
+              "count": 6
+            },
+            {
+              "descriptor": "USA.MD.Home Office Washington DC Metro",
+              "id": "1d3fc548857c100e4d7adb9cc8260000",
+              "count": 3
+            },
+            {
+              "descriptor": "USA.NY.Home Office NY Metro Tri-State",
+              "id": "9219350f6309100e4dc82402df0e0000",
+              "count": 1
+            },
+            {
+              "descriptor": "USA.VA.Home Office Washington DC Metro",
+              "id": "b5f779156cca100e4de800b989340000",
+              "count": 1
+            },
+            {
+              "descriptor": "USA.VA.Reston",
+              "id": "dc19140f795310005421c0191f360000",
+              "count": 54
+            },
+            {
+              "descriptor": "USA Remote",
+              "id": "71646621170f01ae159ce0c1dd1a273b",
+              "count": 17
+            },
+            {
+              "descriptor": "VNM.Da Nang",
+              "id": "6c9e72f7ea5610011ba30f0422650000",
+              "count": 4
+            },
+            {
+              "descriptor": "Workday USA Offices",
+              "id": "9da5d518486801f61a50c4aedf1ab23f",
+              "count": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "facetParameter": "distance",
+      "descriptor": "Distance",
+      "values": [
+        {
+          "descriptor": "10 miles",
+          "id": "a538cdb60a631000078a2c60ed1700f3",
+          "count": 1
+        },
+        {
+          "descriptor": "25 miles",
+          "id": "a538cdb60a631000078a2c6a410300f4",
+          "count": 1
+        },
+        {
+          "descriptor": "50 miles",
+          "id": "a538cdb60a631000078a2c6eadd300f5",
+          "count": 1
+        },
+        {
+          "descriptor": "100 miles",
+          "id": "a538cdb60a631000078a2c71efcc00f6",
+          "count": 1
+        },
+        {
+          "descriptor": "Any Distance",
+          "id": "a538cdb60a631000078a2c74f73b00f7",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "userAuthenticated": false
+}

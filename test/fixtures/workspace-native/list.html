@@ -1,0 +1,2296 @@
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru">
+<head>
+	<title>Каталог тендеров и лидов</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Каталог тендеров и лидов" />
+<style>
+	html {
+		font-size: min(calc(100vw / 130), 10.7926px) !important;
+	}
+	html, body, #app, .general-layout {
+		min-height: 100%;
+	}
+.loader {
+		padding: 50vh 0 0 50vw;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 9999;
+		background: #fff;
+		width: 100%;
+		height: 100%;
+		transform: translateZ(0) scale(1);
+		backface-visibility: hidden
+	}
+
+	.loader_box {
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		position: relative;
+		width: 4.5vw;
+		height: 4.5vw	}
+
+	.loader_box-circle {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0
+	}
+
+	.loader_box-circle:before {
+		content: '';
+		display: block;
+		margin: 0 auto;
+		width: 15%;
+		height: 15%;
+		background-color: #00bff3;
+		border-radius: 100%;
+		-webkit-animation: sk-fading-circle-delay 1.2s infinite ease-in-out both;
+		animation: sk-fading-circle-delay 1.2s infinite ease-in-out both
+	}
+
+	.loader_box-circle-2 {
+		-webkit-transform: rotate(30deg);
+		transform: rotate(30deg)
+	}
+
+	.loader_box-circle-3 {
+		-webkit-transform: rotate(60deg);
+		transform: rotate(60deg)
+	}
+
+	.loader_box-circle-4 {
+		-webkit-transform: rotate(90deg);
+		transform: rotate(90deg)
+	}
+
+	.loader_box-circle-5 {
+		-webkit-transform: rotate(120deg);
+		transform: rotate(120deg)
+	}
+
+	.loader_box-circle-6 {
+		-webkit-transform: rotate(150deg);
+		transform: rotate(150deg)
+	}
+
+	.loader_box-circle-7 {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg)
+	}
+
+	.loader_box-circle-8 {
+		-webkit-transform: rotate(210deg);
+		transform: rotate(210deg)
+	}
+
+	.loader_box-circle-9 {
+		-webkit-transform: rotate(240deg);
+		transform: rotate(240deg)
+	}
+
+	.loader_box-circle-10 {
+		-webkit-transform: rotate(270deg);
+		transform: rotate(270deg)
+	}
+
+	.loader_box-circle-11 {
+		-webkit-transform: rotate(300deg);
+		transform: rotate(300deg)
+	}
+
+	.loader_box-circle-12 {
+		-webkit-transform: rotate(330deg);
+		transform: rotate(330deg)
+	}
+
+	.loader_box-circle-2:before {
+		-webkit-animation-delay: -1.1s;
+		animation-delay: -1.1s
+	}
+
+	.loader_box-circle-3:before {
+		-webkit-animation-delay: -1s;
+		animation-delay: -1s
+	}
+
+	.loader_box-circle-4:before {
+		-webkit-animation-delay: -0.9s;
+		animation-delay: -0.9s
+	}
+
+	.loader_box-circle-5:before {
+		-webkit-animation-delay: -0.8s;
+		animation-delay: -0.8s
+	}
+
+	.loader_box-circle-6:before {
+		-webkit-animation-delay: -0.7s;
+		animation-delay: -0.7s
+	}
+
+	.loader_box-circle-7:before {
+		-webkit-animation-delay: -0.6s;
+		animation-delay: -0.6s
+	}
+
+	.loader_box-circle-8:before {
+		-webkit-animation-delay: -0.5s;
+		animation-delay: -0.5s
+	}
+
+	.loader_box-circle-9:before {
+		-webkit-animation-delay: -0.4s;
+		animation-delay: -0.4s
+	}
+
+	.loader_box-circle-10:before {
+		-webkit-animation-delay: -0.3s;
+		animation-delay: -0.3s
+	}
+
+	.loader_box-circle-11:before {
+		-webkit-animation-delay: -0.2s;
+		animation-delay: -0.2s
+	}
+
+	.loader_box-circle-12:before {
+		-webkit-animation-delay: -0.1s;
+		animation-delay: -0.1s
+	}
+
+	@-webkit-keyframes sk-fading-circle-delay {
+		0%, 39%, 100% {
+			opacity: 0
+		}
+		40% {
+			opacity: 1
+		}
+	}
+
+	@keyframes sk-fading-circle-delay {
+		0%, 39%, 100% {
+			opacity: 0
+		}
+		40% {
+			opacity: 1
+		}
+	}
+
+	</style><script type="application/ld+json">{"@context":"http://schema.org","@type":"WebSite","name":"Workspace","url":"https://workspace.ru"}</script>
+<meta property="og:site_name" content="Workspace" />
+<meta name="robots" content="index, follow" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="https://workspace.ru/" />
+<meta name="copyright" content="Workspace.ru" />
+<meta name="referrer" content="unsafe-url" />
+<meta name="yandex-verification" content="aabd9f42c0e98915" />
+<link rel="preload" href="/local/templates/tender_v2/ws_build/fonts/proximanova-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/local/templates/tender_v2/ws_build/fonts/proximanova-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/local/templates/tender_v2/ws_build/fonts/proximanova-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/local/templates/tender_v2/ws_build/fonts/proximanova-regularit-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/local/templates/tender_v2/ws_build/fonts/pixel-font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=62944ef2efdeb">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=62944ef2efdeb">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=62944ef2efdeb">
+<link rel="manifest" href="/favicon/site.webmanifest?v=62944ef2efdeb">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=62944ef2efdeb" color="#5bbad5">
+<link rel="shortcut icon" href="/favicon/favicon.ico?v=62944ef2efdeb">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png?v=62944ef2efdeb">
+<meta name="msapplication-config" content="/favicon/browserconfig.xml?v=62944ef2efdeb">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:url" content="https://workspace.ru/tenders/" />
+<meta property="og:image" content="https://workspace.ru/ws.png" />
+<meta property="og:site_name" content="WORKSPACE" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@WORKSPACE_ru" />
+<meta name="twitter:image" content="https://workspace.ru/ws.png" />
+<link rel="canonical" href="https://workspace.ru/tenders/"/>
+<link rel="next" href="/tenders/?page=2"/>
+<meta property="og:title" content="Каталог тендеров и лидов" />
+<meta name="twitter:title" content="Каталог тендеров и лидов" />
+<meta property="og:description" content="Каталог тендеров и лидов" />
+<meta name="twitter:description" content="Каталог тендеров и лидов" />
+
+
+
+<link href="/bitrix/cache/css/s1/tender_v2/template_cb60cce7ed949d00f6da2265acf15059/template_cb60cce7ed949d00f6da2265acf15059_v1.css?17908535411182626" type="text/css"  data-template-style="true" rel="stylesheet" />
+	</head>
+<body class="">
+<div id='fb-root'></div>
+
+
+	<div class="loader js-loader" data-page-loader>
+		<div class="loader_box">
+			<div class="loader_box-circle loader_box-circle-1"></div>
+			<div class="loader_box-circle loader_box-circle-2"></div>
+			<div class="loader_box-circle loader_box-circle-3"></div>
+			<div class="loader_box-circle loader_box-circle-4"></div>
+			<div class="loader_box-circle loader_box-circle-5"></div>
+			<div class="loader_box-circle loader_box-circle-6"></div>
+			<div class="loader_box-circle loader_box-circle-7"></div>
+			<div class="loader_box-circle loader_box-circle-8"></div>
+			<div class="loader_box-circle loader_box-circle-9"></div>
+			<div class="loader_box-circle loader_box-circle-10"></div>
+			<div class="loader_box-circle loader_box-circle-11"></div>
+			<div class="loader_box-circle loader_box-circle-12"></div>
+		</div>
+	</div>
+
+	<div class='header-notice-on-top'
+		 data-global-notice-block='{"id":37,"type":"beforeHeader","name":"global_notice_","url":"\/api-v\/set\/header\/notice\/close\/"}'>
+		<div class="header-notice-on-top__wrapper" data-ext-links-allow-container><!--ext-link-container-start-->
+			<div class="w-100p u-fx-auto t-a-c">
+				<span data-teams="true"><a data-ext-link-allow href="https://workspace.ru/awards/cases/lidery-goda/" target="_blank" >Лидеры года</a> — новая категория на Workspace Digital Awards! <a data-ext-link-allow href="https://workspace.ru/awards/" target="_blank" >Номинируйте</a> вашу команду, продукты и проекты.</span>			</div>
+			<button data-global-notice-close class="u-btn-reset align-items-center d-flex u-color-white" aria-label="Скрыть сообщение">
+				<svg class="c-svg-icon u-fs-18" xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+					<g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-width="1.5">
+						<path d="M12.306.356L.26 12.4M.26.356L12.306 12.4" transform="translate(1.43 .848)" />
+					</g>
+				</svg>
+			</button>
+		<!--ext-link-container-end--></div>
+	</div>
+	<header class="header _radius _shadow" data-main-header data-dropdown-container>
+		<div class="header__wrapper d-flex align-items-center">
+			<div class="page-inner__container d-flex w-100p justify-content-start align-items-center">
+				
+<a href="/"><img class='header-new__logo' src='/local/templates/tender_v2/ws_build/images/logo_new.svg' alt='Workspace.ru'></a>
+<button class='pull-left _radius-lg _sm button button--gray1 u-my-auto header-new__dd-btn' data-dropdown-button data-header-main-menu-btn>
+	<svg class="c-svg-icon _xl u-va-bottom">
+		<use xlink:href="/local/templates/tender_v2/ws_build/images/header-new-sprite.svg#menu"></use>
+	</svg>&nbsp;
+	Тендеры и лиды</button>
+
+
+<div class="u-ml-auto d-flex ">
+	<a data-header-menu-item="all" href="/create/" class="button button--blue _radius-lg _sm u-my-auto u-ml-12" data-header-create-tender-link>Организовать тендер</a>
+
+		<a data-header-menu-item="tender" data-header-favourites data-header-favourites-wrapper href="/favorites"
+	   class="button button--gray1 _sm _radius-lg u-ml-12  ">
+		<svg class="c-svg-icon _xl u-va-bottom">
+			<use xlink:href="/local/templates/tender_v2/ws_build/images/header-new-sprite.svg#heart"></use>
+		</svg>
+		<span class='hide' data-header-favourites-text="1">0</span>
+	</a>
+			<a data-header-menu-item="job" data-header-favourites data-header-favourites-wrapper href="/favorites/vacancies/"
+		   class="button button--gray1 _sm _radius-lg u-ml-12 ">
+			<svg class="c-svg-icon _xl u-va-bottom">
+				<use xlink:href="/local/templates/tender_v2/ws_build/images/header-new-sprite.svg#heart"></use>
+			</svg>
+		</a>
+	
+	
+			<a class="button button--gray1 _radius-lg _sm u-radius-right-0 u-my-auto " href="/login/?backurl=%2Ftenders%2F" data-login-popup-show="/login/login.php?ajax=Y">Войти</a>
+	<a class="button button--gray1 _radius-lg _sm u-ml-0 u-radius-left-0 u-my-auto " href="/login/registration.php?backurl=%2Ftenders%2F">Зарегистрироваться</a>
+
+		<div class="modal" aria-hidden="true" data-modal-popup data-login-popup>
+		<div class="modal__overlay" tabindex="-1">
+			<div class="modal__dialog" role="dialog" aria-modal="true">
+				<button type="button" class="modal__btn-close _type2 u-p-0" data-modal-popup-close><span class="u-sr-only">Закрыть</span></button>
+				<div class="modal__inner _small-pad" data-login-popup-body data-modal-popup-body>
+					<div class="cssload-zenith"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+			</div>
+		</div>
+		<div class="_radius  _bordered d-flex align-items-center header__wrapper">
+					<ul class='page-inner__container w-100p header-new__submenu align-items-center reset-list'>
+							<li class='header-new__submenu-item u-mt-0'>
+					<a
+						class='c-link _blue-d-type1 u-fw-600 u-mt-0 '
+						href='/b2b/'
+											>
+						Тендерная площадка					</a>
+				</li>
+							<li class='header-new__submenu-item u-mt-0'>
+					<a
+						class='c-link _blue-d-type1 u-fw-600 u-mt-0 '
+						href='/how-it-works/'
+											>
+						Как это работает					</a>
+				</li>
+							<li class='header-new__submenu-item u-mt-0'>
+					<a
+						class='c-link _blue-d-type1 u-fw-600 u-mt-0 _active'
+						href='/tenders/'
+											>
+						Каталог тендеров					</a>
+				</li>
+							<li class='header-new__submenu-item u-mt-0'>
+					<a
+						class='c-link _blue-d-type1 u-fw-600 u-mt-0 '
+						href='/create/'
+											>
+						Организовать тендер					</a>
+				</li>
+					</ul>
+	
+	<div class='header-new__dropdown-menu' data-dropdown>
+		<div class='page-inner__container w-100p d-flex justify-content-start'>
+							<div class='header-new__dropdown-menu-col'>
+					<div class='header-new__dropdown-menu-title'>Тендеры и лиды</div>
+					<ul class='reset-list'>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/b2b/'
+																	>
+									Тендерная площадка								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/how-it-works/'
+																	>
+									Как это работает								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 _active'
+									href='/tenders/'
+																	>
+									Каталог тендеров								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/create/'
+																	>
+									Организовать тендер								</a>
+							</li>
+											</ul>
+				</div>
+							<div class='header-new__dropdown-menu-col'>
+					<div class='header-new__dropdown-menu-title'>Исполнители</div>
+					<ul class='reset-list'>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/contractors/'
+																	>
+									Диджитал-агентства								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/people/'
+																	>
+									Специалисты								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/gratitude-letters/'
+																	>
+									Отзывы об агентствах								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/calculator/'
+																	>
+									Стоимость услуг								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/rating/'
+																	>
+									Рейтинги								</a>
+							</li>
+											</ul>
+				</div>
+							<div class='header-new__dropdown-menu-col'>
+					<div class='header-new__dropdown-menu-title'>Медиа</div>
+					<ul class='reset-list'>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/cases/'
+																	>
+									Кейсы								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/blog/'
+																	>
+									Статьи								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/events/'
+																	>
+									Афиша								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/expert/'
+																	>
+									Слово экспертам								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/docs/'
+																	>
+									Документация								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/news/'
+																	>
+									Новости компаний								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/interview/'
+																	>
+									Интервью								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/video/'
+																	>
+									Видео								</a>
+							</li>
+											</ul>
+				</div>
+							<div class='header-new__dropdown-menu-col'>
+					<div class='header-new__dropdown-menu-title'>Информация</div>
+					<ul class='reset-list'>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/about/'
+																	>
+									О проекте								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/project-news/'
+																	>
+									Новости проекта								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/advertising/'
+																	>
+									Платные опции								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/help/'
+																	>
+									Помощь								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/corporate-identity/'
+																	>
+									Наша айдентика								</a>
+							</li>
+											</ul>
+				</div>
+							<div class='header-new__dropdown-menu-col'>
+					<div class='header-new__dropdown-menu-title'>Другое</div>
+					<ul class='reset-list'>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/awards/'
+									target="_blank"								>
+									Премия WDA								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/tools/'
+																	>
+									Инструменты								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/vacancies/'
+																	>
+									Вакансии								</a>
+							</li>
+													<li class="header-new__dropdown-menu-item">
+								<a
+									class='c-link _blue-d-type1 u-fw-600 '
+									href='/contests/'
+																	>
+									Каталог премий								</a>
+							</li>
+											</ul>
+				</div>
+					</div>
+	</div>
+		</div>
+			</header>
+	<div class="grid  _with-subheader">
+
+
+	<span data-user-comment-flag="/ajax/add_comment.php"></span>
+	<div class="tender _t-cat" data-view="TenderPublicList" data-template="public_list">
+		<div class="grid__inner _tenders">
+			<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 0,
+            "name": "Главная",
+            "item": "https://workspace.ru/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Каталог тендеров",
+            "item": "https://workspace.ru/tenders/"
+        }
+    ]
+}</script> <ul class="breadcrumbs " data-breadcrumbs itemscope itemtype="http://schema.org/BreadcrumbList"> <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <a href="/" title="Главная" itemscope itemtype="http://schema.org/Thing" itemid="https://workspace.ru/" itemprop="item"><span itemprop="name">Главная</span></a> <meta itemprop="position" content="0"> </li><li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"> <i class="breadcrumbs__divider">/</i> <a  title="Каталог тендеров" itemscope itemtype="http://schema.org/Thing" itemid="https://workspace.ru/tenders/" itemprop="item"><span itemprop="name">Каталог тендеров</span></a> <meta itemprop="position" content="1"> </li></ul>			<div class="company-area-empty__title-wraper">
+
+				<div class="inline-h m-hide">
+					<h1 class="page-title">Каталог тендеров и лидов</h1>
+											<a target="_blank" href="https://workspace.ru/tenders/rss/">
+							<i class="ico-rss"></i>
+						</a>
+									</div>
+
+			</div>
+			<div class="grid__aside _tenders">
+				<div class="filters base-style _margin-top">
+
+					<form role="form" method="GET" class="form-inline tender-filter" data-tenderlisturl="/tenders/">
+						<div class="filters__group _budget vacancies__filters">
+							<div class="vacancies__filters-title">Бюджет</div>
+							<div class="clearfix">
+								<div class="tender__form-input _extra-short _super-short">
+									<input type="text" value="" name="PRICE_FROM" placeholder="От" data-masked/>
+									<span class="rub _tenders"></span>
+								</div>
+								<div class="tender__form-input _extra-short _super-short">
+									<input type="text" value="" name="PRICE_TO" placeholder="До" data-masked/>
+									<span class="rub _tenders"></span>
+								</div>
+							</div>
+						</div>
+						<div class="filters__group _need vacancies__filters">
+							<div class="vacancies__filters-title">Что требуется</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="2" type="checkbox"
+															 data-code="web-development"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/web-development/"
+										   data-to-input>Разработка сайтов</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="4" type="checkbox"
+															 data-code="seo"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/seo/"
+										   data-to-input>Поисковая оптимизация</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="5" type="checkbox"
+															 data-code="context"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/context/"
+										   data-to-input>Реклама</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="6" type="checkbox"
+															 data-code="apps-development"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/apps-development/"
+										   data-to-input>Мобильные приложения</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="8" type="checkbox"
+															 data-code="smm"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/smm/"
+										   data-to-input>SMM и PR</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="9" type="checkbox"
+															 data-code="marketing"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/marketing/"
+										   data-to-input>Маркетинг</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="10" type="checkbox"
+															 data-code="identity"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/identity/"
+										   data-to-input>Дизайн и брендинг</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="11" type="checkbox"
+															 data-code="copywriting"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/copywriting/"
+										   data-to-input>Контент</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="12" type="checkbox"
+															 data-code="crm"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/crm/"
+										   data-to-input>CRM, 1C, ПО, чат-боты, администрирование</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="13" type="checkbox"
+															 data-code="gamedev"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/gamedev/"
+										   data-to-input>Игры</a>
+									</label>
+								</div>
+															<div class="vacancies__filters-check-item">
+									<label>
+										<input  name="TYPE_ID[]" value="14" type="checkbox"
+															 data-code="videoproduction"/>
+										<a class="vacancies__filters-check-item-line" href="/tenders/videoproduction/"
+										   data-to-input>Видео и фото</a>
+									</label>
+								</div>
+													</div>
+												<div class="filters__group vacancies__filters" data-city-country>
+							<div class="filters__group-block">
+								<div class="vacancies__filters-title">Страна</div>
+								<div class="clearfix">
+									<div>
+										<select data-change name="COUNTRY_ID" data-country-select>
+											<option value="0" selected>Любая страна</option>
+																							<option  value="31">Россия</option>
+																							<option  value="34">Украина</option>
+																							<option  value="23">Беларусь</option>
+																							<option  value="13">Абхазия</option>
+																							<option  value="8">Австрия</option>
+																							<option  value="7">Азербайджан</option>
+																							<option  value="22">Армения</option>
+																							<option  value="5">Болгария</option>
+																							<option  value="15">Великобритания</option>
+																							<option  value="26">Германия</option>
+																							<option  value="19">Грузия</option>
+																							<option  value="11">Египет</option>
+																							<option  value="62">Индонезия</option>
+																							<option  value="18">Испания</option>
+																							<option  value="1">Израиль</option>
+																							<option  value="27">Индия</option>
+																							<option  value="44">Ирландия</option>
+																							<option  value="20">Италия</option>
+																							<option  value="28">Казахстан</option>
+																							<option  value="24">Канада</option>
+																							<option  value="25">Китай</option>
+																							<option  value="9">Южная Корея</option>
+																							<option  value="29">Латвия</option>
+																							<option  value="4">Кыргызстан</option>
+																							<option  value="3">Литва</option>
+																							<option  value="30">Молдова</option>
+																							<option  value="21">Польша</option>
+																							<option  value="43">Сербия</option>
+																							<option  value="14">Словакия</option>
+																							<option  value="58">Швейцария</option>
+																							<option  value="32">Швеция</option>
+																							<option  value="35">США</option>
+																							<option  value="12">Таджикистан</option>
+																							<option  value="17">Таиланд</option>
+																							<option  value="37">Туркменистан</option>
+																							<option  value="33">Турция</option>
+																							<option  value="36">Узбекистан</option>
+																							<option  value="10">Финляндия</option>
+																							<option  value="16">Франция</option>
+																							<option  value="6">Чехия</option>
+																							<option  value="2">Эстония</option>
+																							<option  value="40">Кипр</option>
+																							<option  value="59">Сингапур</option>
+																							<option  value="60">Португалия</option>
+																							<option  value="61">Черногория</option>
+																							<option  value="57">ОАЭ</option>
+																					</select>
+									</div>
+								</div>
+							</div>
+							<div class="filters__group-block vacancies__filters">
+								<div class="vacancies__filters-title">Город</div>
+								<div class="clearfix">
+									<div>
+										<select data-placeholder="&nbsp;"  data-city-select data-change name="CITY_ID">
+											<option value="0" data-country="0" selected="selected" data-forward-up="" data-del>Любой город</option>
+																							<option    data-country="31"  value="56">Абакан</option>
+																							<option    data-country="57"  value="622">Абу-Даби</option>
+																							<option    data-country="60"  value="636">Авейру</option>
+																							<option    data-country="57"  value="623">Аджман</option>
+																							<option    data-country="31"  value="171">Азнакаево</option>
+																							<option    data-country="28"  value="275">Актау</option>
+																							<option    data-country="28"  value="173">Актобе</option>
+																							<option    data-country="31"  value="139">Алапаевск</option>
+																							<option    data-country="60"  value="638">Албуфейра</option>
+																							<option    data-country="35"  value="342">Александрия</option>
+																							<option    data-country="34"  value="393">Александрия</option>
+																							<option    data-country="31"  value="66">Александров</option>
+																							<option    data-country="28"  value="81">Алматы</option>
+																							<option    data-country="31"  value="283">Алушта</option>
+																							<option    data-country="34"  value="134">Алчевск</option>
+																							<option    data-country="31"  value="120">Альметьевск</option>
+																							<option    data-country="31"  value="41">Анапа</option>
+																							<option    data-country="31"  value="223">Ангарск</option>
+																							<option    data-country="36"  value="330">Андижан</option>
+																							<option    data-country="17"  value="271">Ао Нанг</option>
+																							<option    data-country="31"  value="409">Апатиты</option>
+																							<option    data-country="31"  value="614">Арзамас</option>
+																							<option    data-country="31"  value="281">Армавир</option>
+																							<option    data-country="31"  value="425">Арсеньев</option>
+																							<option    data-country="31"  value="71">Артем</option>
+																							<option    data-country="34"  value="290">Артёмовск</option>
+																							<option    data-country="31"  value="78">Архангельск</option>
+																							<option    data-country="28"  value="30">Астана</option>
+																							<option    data-country="31"  value="133">Астрахань</option>
+																							<option    data-country="28"  value="205">Атырау</option>
+																							<option    data-country="31"  value="491">Ахтанизовская</option>
+																							<option    data-country="31"  value="210">Ачинск</option>
+																							<option    data-country="1"  value="272">Ашдод</option>
+																							<option    data-country="37"  value="410">Ашхабад</option>
+																							<option    data-country="58"  value="628">Базель</option>
+																							<option    data-country="31"  value="232">Бакал</option>
+																							<option    data-country="7"  value="135">Баку</option>
+																							<option    data-country="31"  value="137">Балаково</option>
+																							<option    data-country="31"  value="157">Балашиха</option>
+																							<option    data-country="26"  value="167">Бамберг</option>
+																							<option    data-country="17"  value="501">Бангкок</option>
+																							<option    data-country="23"  value="280">Барановичи</option>
+																							<option    data-country="31"  value="15">Барнаул</option>
+																							<option    data-country="18"  value="289">Барселона</option>
+																							<option    data-country="1"  value="298">Бат Ям</option>
+																							<option    data-country="31"  value="188">Батайск</option>
+																							<option    data-country="19"  value="324">Батуми</option>
+																							<option    data-country="34"  value="399">Белая Церковь</option>
+																							<option    data-country="31"  value="99">Белгород</option>
+																							<option    data-country="43"  value="509">Белград</option>
+																							<option    data-country="31"  value="132">Белово</option>
+																							<option    data-country="31"  value="405">Белокуриха</option>
+																							<option    data-country="31"  value="310">Белорецк</option>
+																							<option    data-country="30"  value="162">Бельцы</option>
+																							<option    data-country="30"  value="313">Бендеры</option>
+																							<option    data-country="31"  value="116">Бердск</option>
+																							<option    data-country="34"  value="112">Бердянск</option>
+																							<option    data-country="31"  value="218">Березники</option>
+																							<option    data-country="31"  value="58">Березовский</option>
+																							<option    data-country="26"  value="451">Берлин</option>
+																							<option    data-country="58"  value="629">Берн</option>
+																							<option    data-country="1"  value="478">Беэр-Шева</option>
+																							<option    data-country="61"  value="647">Биело-Поле</option>
+																							<option    data-country="31"  value="262">Бийск</option>
+																							<option    data-country="31"  value="242">Биробиджан</option>
+																							<option    data-country="4"  value="96">Бишкек</option>
+																							<option    data-country="31"  value="364">Благовещенск</option>
+																							<option    data-country="23"  value="126">Бобруйск</option>
+																							<option    data-country="31"  value="493">Богатые Сабы</option>
+																							<option    data-country="23"  value="303">Борисов</option>
+																							<option    data-country="31"  value="369">Борисоглебск</option>
+																							<option    data-country="34"  value="284">Борисполь</option>
+																							<option    data-country="31"  value="152">Боровичи</option>
+																							<option    data-country="23"  value="336">Боровляны</option>
+																							<option    data-country="35"  value="413">Бостон</option>
+																							<option    data-country="60"  value="635">Брага</option>
+																							<option    data-country="14"  value="462">Братислава</option>
+																							<option    data-country="31"  value="202">Братск</option>
+																							<option    data-country="23"  value="27">Брест</option>
+																							<option    data-country="6"  value="297">Брно</option>
+																							<option    data-country="31"  value="67">Брянск</option>
+																							<option    data-country="31"  value="499">Бугульма</option>
+																							<option    data-country="61"  value="644">Будва</option>
+																							<option    data-country="5"  value="314">Бургас</option>
+																							<option    data-country="36"  value="224">Бухара</option>
+																							<option    data-country="34"  value="207">Буча</option>
+																							<option    data-country="22"  value="277">Ванадзор</option>
+																							<option    data-country="5"  value="138">Варна</option>
+																							<option    data-country="21"  value="300">Варшава</option>
+																							<option    data-country="31"  value="368">Великие Луки</option>
+																							<option    data-country="31"  value="351">Великий Новгород</option>
+																							<option    data-country="31"  value="361">Великий Устюг</option>
+																							<option    data-country="8"  value="146">Вена</option>
+																							<option    data-country="23"  value="406">Ветка</option>
+																							<option    data-country="31"  value="476">Видное</option>
+																							<option    data-country="23"  value="444">Вилейка</option>
+																							<option    data-country="3"  value="82">Вильнюс</option>
+																							<option    data-country="34"  value="85">Винница</option>
+																							<option    data-country="3"  value="158">Висагинас</option>
+																							<option    data-country="23"  value="175">Витебск</option>
+																							<option    data-country="31"  value="13">Владивосток</option>
+																							<option    data-country="31"  value="196">Владикавказ</option>
+																							<option    data-country="31"  value="34">Владимир</option>
+																							<option    data-country="31"  value="47">Волгоград</option>
+																							<option    data-country="31"  value="115">Волгодонск</option>
+																							<option    data-country="31"  value="177">Волжский</option>
+																							<option    data-country="31"  value="83">Вологда</option>
+																							<option    data-country="31"  value="326">Волхов</option>
+																							<option    data-country="31"  value="11">Воронеж</option>
+																							<option    data-country="31"  value="189">Воскресенск</option>
+																							<option    data-country="31"  value="457">Воткинск</option>
+																							<option    data-country="31"  value="619">Всеволожск</option>
+																							<option    data-country="31"  value="455">Выборг</option>
+																							<option    data-country="31"  value="621">Высоцк</option>
+																							<option    data-country="31"  value="203">Вязники</option>
+																							<option    data-country="13"  value="265">Гагра</option>
+																							<option    data-country="26"  value="25">Гамбург</option>
+																							<option    data-country="31"  value="463">Гатчина</option>
+																							<option    data-country="31"  value="53">Геленджик</option>
+																							<option    data-country="31"  value="102">Георгиевск</option>
+																							<option    data-country="60"  value="637">Гимарайнш</option>
+																							<option    data-country="31"  value="480">Глазов</option>
+																							<option    data-country="23"  value="127">Гомель</option>
+																							<option    data-country="31"  value="375">Горно-Алтайск</option>
+																							<option    data-country="31"  value="234">Городец</option>
+																							<option    data-country="31"  value="427">Гороховец</option>
+																							<option    data-country="31"  value="443">Горячий Ключ</option>
+																							<option    data-country="23"  value="124">Гродно</option>
+																							<option    data-country="31"  value="217">Грозный</option>
+																							<option    data-country="25"  value="325">Гуанчжоу</option>
+																							<option    data-country="31"  value="349">Гусь-Хрустальный</option>
+																							<option    data-country="31"  value="387">Дальнереченск</option>
+																							<option    data-country="31"  value="311">Дербент</option>
+																							<option    data-country="62"  value="649">Джакарта</option>
+																							<option    data-country="31"  value="464">Джанкой</option>
+																							<option    data-country="36"  value="231">Джизак</option>
+																							<option    data-country="31"  value="59">Дзержинск</option>
+																							<option    data-country="23"  value="400">Дзержинск</option>
+																							<option    data-country="31"  value="395">Дзержинский</option>
+																							<option    data-country="31"  value="416">Димитровград</option>
+																							<option    data-country="31"  value="441">Дмитров</option>
+																							<option    data-country="34"  value="344">Днепр</option>
+																							<option    data-country="34"  value="428">Днепр</option>
+																							<option    data-country="35"  value="482">Довер</option>
+																							<option    data-country="31"  value="367">Долгопрудный</option>
+																							<option    data-country="31"  value="288">Долинск</option>
+																							<option    data-country="31"  value="244">Домодедово</option>
+																							<option    data-country="31"  value="24">Донецк</option>
+																							<option    data-country="34"  value="502">Дрогобыч</option>
+																							<option    data-country="57"  value="624">Дубай</option>
+																							<option    data-country="44"  value="510">Дублин</option>
+																							<option    data-country="31"  value="121">Дубна</option>
+																							<option    data-country="26"  value="179">Дуйсбург</option>
+																							<option    data-country="12"  value="259">Душанбе</option>
+																							<option    data-country="26"  value="412">Дюссельдорф</option>
+																							<option    data-country="31"  value="235">Евпатория</option>
+																							<option    data-country="31"  value="225">Егорьевск</option>
+																							<option   data-forward-up="18"  data-country="31"  value="339">Екатеринбург</option>
+																							<option    data-country="31"  value="433">Елабуга</option>
+																							<option    data-country="31"  value="434">Елабуга</option>
+																							<option    data-country="31"  value="449">Елец</option>
+																							<option    data-country="31"  value="7">Елизово</option>
+																							<option    data-country="22"  value="176">Ереван</option>
+																							<option    data-country="28"  value="323">Есик</option>
+																							<option    data-country="31"  value="103">Ессентуки</option>
+																							<option    data-country="31"  value="353">Железноводск</option>
+																							<option    data-country="34"  value="468">Жёлтые Воды</option>
+																							<option    data-country="58"  value="630">Женева</option>
+																							<option    data-country="31"  value="251">Жигулевск</option>
+																							<option    data-country="34"  value="192">Житомир</option>
+																							<option    data-country="23"  value="488">Жлобин</option>
+																							<option    data-country="23"  value="414">Жодино</option>
+																							<option    data-country="31"  value="97">Жуковский</option>
+																							<option    data-country="34"  value="86">Запорожье</option>
+																							<option    data-country="31"  value="200">Зеленоград</option>
+																							<option    data-country="31"  value="401">Зеленоградск</option>
+																							<option    data-country="31"  value="514">Зеленодольск</option>
+																							<option    data-country="31"  value="453">Златоуст</option>
+																							<option    data-country="34"  value="348">Ивано-Франковск</option>
+																							<option    data-country="31"  value="75">Иваново</option>
+																							<option    data-country="31"  value="511">Иваново</option>
+																							<option    data-country="31"  value="320">Ивантеевка</option>
+																							<option    data-country="22"  value="454">Иджеван</option>
+																							<option    data-country="1"  value="148">Иерусалим</option>
+																							<option    data-country="31"  value="2">Ижевск</option>
+																							<option    data-country="31"  value="46">Иркутск</option>
+																							<option    data-country="34"  value="479">Ирпень</option>
+																							<option    data-country="31"  value="98">Истра</option>
+																							<option    data-country="31"  value="507">Ишим</option>
+																							<option    data-country="31"  value="18">Йошкар-Ола</option>
+																							<option   data-forward-up="13"  data-country="31"  value="10">Казань</option>
+																							<option    data-country="31"  value="31">Калининград</option>
+																							<option    data-country="31"  value="95">Калуга</option>
+																							<option    data-country="31"  value="384">Каменск-Уральский</option>
+																							<option    data-country="31"  value="178">Камышин</option>
+																							<option    data-country="28"  value="125">Караганда</option>
+																							<option    data-country="3"  value="460">Каунас</option>
+																							<option    data-country="60"  value="642">Кашкайш</option>
+																							<option    data-country="10"  value="318">Каяни</option>
+																							<option    data-country="26"  value="150">Кельн</option>
+																							<option    data-country="31"  value="49">Кемерово</option>
+																							<option    data-country="31"  value="319">Керчь</option>
+																							<option    data-country="34"  value="23">Киев</option>
+																							<option    data-country="31"  value="153">Кимры</option>
+																							<option    data-country="31"  value="253">Кингисепп</option>
+																							<option    data-country="31"  value="322">Кинешма</option>
+																							<option    data-country="31"  value="246">Кириллов</option>
+																							<option    data-country="31"  value="618">Кириши</option>
+																							<option    data-country="31"  value="35">Киров</option>
+																							<option    data-country="31"  value="363">Кирово-Чепецк</option>
+																							<option    data-country="34"  value="149">Кировоград</option>
+																							<option    data-country="31"  value="508">Кировск</option>
+																							<option    data-country="31"  value="104">Кисловодск</option>
+																							<option    data-country="30"  value="57">Кишинев</option>
+																							<option    data-country="3"  value="278">Клайпеда</option>
+																							<option    data-country="31"  value="156">Клин</option>
+																							<option    data-country="31"  value="43">Ковров</option>
+																							<option    data-country="31"  value="236">Когалым</option>
+																							<option    data-country="60"  value="640">Коимбра</option>
+																							<option    data-country="28"  value="473">Кокшетау</option>
+																							<option    data-country="31"  value="229">Коломна</option>
+																							<option    data-country="34"  value="50">Коломыя</option>
+																							<option    data-country="31"  value="512">Колпино</option>
+																							<option    data-country="31"  value="345">Комсомольск-на-Амуре</option>
+																							<option    data-country="31"  value="456">Конаково</option>
+																							<option    data-country="31"  value="437">Копейск</option>
+																							<option    data-country="31"  value="154">Королев</option>
+																							<option    data-country="28"  value="264">Костанай</option>
+																							<option    data-country="31"  value="107">Кострома</option>
+																							<option    data-country="31"  value="256">Котельники</option>
+																							<option    data-country="31"  value="64">Котлас</option>
+																							<option    data-country="61"  value="645">Котор</option>
+																							<option    data-country="2"  value="394">Кохтла-Ярве</option>
+																							<option    data-country="14"  value="267">Кошице</option>
+																							<option    data-country="34"  value="186">Краматорск</option>
+																							<option    data-country="31"  value="385">Красноармейск</option>
+																							<option    data-country="31"  value="255">Красногорск</option>
+																							<option    data-country="31"  value="4">Краснодар</option>
+																							<option    data-country="31"  value="390">Краснознаменск</option>
+																							<option    data-country="31"  value="373">Красноуфимск</option>
+																							<option    data-country="31"  value="40">Красноярск</option>
+																							<option    data-country="31"  value="371">Красный Октябрь</option>
+																							<option    data-country="31"  value="346">Красный Сулин</option>
+																							<option    data-country="34"  value="307">Кременчуг</option>
+																							<option    data-country="34"  value="193">Кривой Рог</option>
+																							<option    data-country="31"  value="490">Кропоткин</option>
+																							<option    data-country="31"  value="220">Кстово</option>
+																							<option    data-country="31"  value="496">Кузьмоловский</option>
+																							<option    data-country="31"  value="119">Курган</option>
+																							<option    data-country="31"  value="61">Курск</option>
+																							<option    data-country="31"  value="422">Кызыл</option>
+																							<option    data-country="31"  value="261">Лабинск</option>
+																							<option    data-country="31"  value="517">Лахденпохья</option>
+																							<option    data-country="31"  value="172">Лениногорск</option>
+																							<option    data-country="31"  value="105">Лермонтов</option>
+																							<option    data-country="31"  value="136">Лесной</option>
+																							<option    data-country="23"  value="474">Лида</option>
+																							<option    data-country="40"  value="438">Лимассол</option>
+																							<option    data-country="16"  value="486">Лион</option>
+																							<option    data-country="31"  value="117">Липецк</option>
+																							<option    data-country="60"  value="633">Лиссабон</option>
+																							<option    data-country="31"  value="423">Лобня</option>
+																							<option    data-country="21"  value="309">Лодзь</option>
+																							<option    data-country="15"  value="317">Лондон</option>
+																							<option    data-country="35"  value="445">Лос-Анджелес</option>
+																							<option    data-country="31"  value="87">Луганск</option>
+																							<option    data-country="35"  value="145">Лумис</option>
+																							<option    data-country="34"  value="170">Луцк</option>
+																							<option    data-country="31"  value="321">Лысьва</option>
+																							<option    data-country="31"  value="426">Лыткарино</option>
+																							<option    data-country="34"  value="51">Львов</option>
+																							<option    data-country="31"  value="239">Люберцы</option>
+																							<option    data-country="31"  value="485">Магадан</option>
+																							<option    data-country="31"  value="359">Магнитогорск</option>
+																							<option    data-country="35"  value="475">Майами</option>
+																							<option    data-country="31"  value="183">Майкоп</option>
+																							<option    data-country="34"  value="241">Макеевка</option>
+																							<option    data-country="31"  value="500">Малоярославец</option>
+																							<option    data-country="31"  value="204">Мариуполь</option>
+																							<option    data-country="31"  value="181">Махачкала</option>
+																							<option    data-country="31"  value="100">Медногорск</option>
+																							<option    data-country="31"  value="383">Междуреченск</option>
+																							<option    data-country="34"  value="209">Мелитополь</option>
+																							<option    data-country="35"  value="144">Мемфис</option>
+																							<option    data-country="31"  value="429">Менделеевск</option>
+																							<option    data-country="31"  value="430">Менделеевск</option>
+																							<option    data-country="34"  value="308">Мерефа</option>
+																							<option    data-country="31"  value="12">Миасс</option>
+																							<option    data-country="20"  value="299">Милан</option>
+																							<option    data-country="31"  value="354">Минеральные Воды</option>
+																							<option    data-country="35"  value="366">Миннеаполис</option>
+																							<option    data-country="23"  value="28">Минск</option>
+																							<option    data-country="31"  value="266">Минусинск</option>
+																							<option    data-country="23"  value="128">Могилёв</option>
+																							<option    data-country="23"  value="129">Мозырь</option>
+																							<option    data-country="23"  value="417">Молодечно</option>
+																							<option    data-country="24"  value="329">Монреаль</option>
+																							<option   data-forward-up="1"  data-country="31"  value="334">Москва</option>
+																							<option    data-country="31"  value="615">Мурино</option>
+																							<option    data-country="31"  value="108">Мурманск</option>
+																							<option    data-country="31"  value="222">Муром</option>
+																							<option    data-country="31"  value="123">Мытищи</option>
+																							<option    data-country="31"  value="350">Набережные Челны</option>
+																							<option    data-country="27"  value="331">Нави Мумбаи</option>
+																							<option    data-country="31"  value="214">Назрань</option>
+																							<option    data-country="31"  value="184">Нальчик</option>
+																							<option    data-country="2"  value="481">Нарва</option>
+																							<option    data-country="31"  value="391">Наро-Фоминск</option>
+																							<option    data-country="31"  value="248">Нарьян-Мар</option>
+																							<option    data-country="1"  value="140">Натания</option>
+																							<option    data-country="31"  value="72">Находка</option>
+																							<option    data-country="31"  value="386">Невинномысск</option>
+																							<option    data-country="31"  value="515">Нестеров</option>
+																							<option    data-country="31"  value="316">Нефтекамск</option>
+																							<option    data-country="31"  value="381">Нефтеюганск</option>
+																							<option    data-country="31"  value="358">Нижневартовск</option>
+																							<option    data-country="31"  value="431">Нижнекамск</option>
+																							<option    data-country="31"  value="432">Нижнекамск</option>
+																							<option   data-forward-up="41"  data-country="31"  value="343">Нижний Новгород</option>
+																							<option    data-country="31"  value="362">Нижний Тагил</option>
+																							<option    data-country="34"  value="88">Николаев</option>
+																							<option    data-country="16"  value="270">Ницца</option>
+																							<option    data-country="34"  value="442">Новая Каховка</option>
+																							<option    data-country="31"  value="494">Новоалтайск</option>
+																							<option    data-country="31"  value="294">Новозыбков</option>
+																							<option    data-country="31"  value="356">Новокузнецк</option>
+																							<option    data-country="31"  value="398">Новомосковск</option>
+																							<option    data-country="23"  value="466">Новополоцк</option>
+																							<option    data-country="31"  value="513">Новоржев</option>
+																							<option    data-country="31"  value="370">Новороссийск</option>
+																							<option   data-forward-up="61"  data-country="31"  value="48">Новосибирск</option>
+																							<option    data-country="31"  value="230">Новоуральск</option>
+																							<option    data-country="31"  value="506">Новочебоксарск</option>
+																							<option    data-country="31"  value="341">Новочеркасск</option>
+																							<option    data-country="31"  value="276">Ногинск</option>
+																							<option    data-country="31"  value="249">Норильск</option>
+																							<option    data-country="31"  value="651">Ноябрьск</option>
+																							<option    data-country="35"  value="250">Нью-Йорк</option>
+																							<option    data-country="31"  value="382">Нязепетровск</option>
+																							<option    data-country="31"  value="168">Обнинск</option>
+																							<option    data-country="34"  value="69">Одесса</option>
+																							<option    data-country="31"  value="182">Одинцово</option>
+																							<option    data-country="15"  value="461">Оксфорд</option>
+																							<option    data-country="31"  value="304">Октябрьский</option>
+																							<option    data-country="31"  value="3">Омск</option>
+																							<option    data-country="31"  value="166">Орел</option>
+																							<option    data-country="31"  value="20">Оренбург</option>
+																							<option    data-country="31"  value="378">Орехово-Зуево</option>
+																							<option    data-country="31"  value="122">Орск</option>
+																							<option    data-country="23"  value="130">Орша</option>
+																							<option    data-country="34"  value="471">Острог</option>
+																							<option    data-country="31"  value="617">Отрадное</option>
+																							<option    data-country="10"  value="465">Оулу</option>
+																							<option    data-country="31"  value="397">Павловский Посад</option>
+																							<option    data-country="28"  value="169">Павлодар</option>
+																							<option    data-country="16"  value="498">Париж</option>
+																							<option    data-country="17"  value="446">Патонг</option>
+																							<option    data-country="40"  value="516">Пафос</option>
+																							<option    data-country="25"  value="164">Пекин</option>
+																							<option    data-country="31"  value="70">Пенза</option>
+																							<option    data-country="34"  value="487">Первомайск</option>
+																							<option    data-country="31"  value="197">Первоуральск</option>
+																							<option    data-country="31"  value="291">Пересвет</option>
+																							<option    data-country="31"  value="392">Переславль-Залесский</option>
+																							<option    data-country="31"  value="14">Пермь</option>
+																							<option    data-country="31"  value="360">Петрозаводск</option>
+																							<option    data-country="28"  value="372">Петропавловск</option>
+																							<option    data-country="31"  value="340">Петропавловск-Камчатский</option>
+																							<option    data-country="23"  value="131">Пинск</option>
+																							<option    data-country="6"  value="292">Пльзень</option>
+																							<option    data-country="61"  value="643">Подгорица</option>
+																							<option    data-country="31"  value="113">Подольск</option>
+																							<option    data-country="21"  value="483">Познань</option>
+																							<option    data-country="31"  value="238">Полевской</option>
+																							<option    data-country="23"  value="65">Полоцк</option>
+																							<option    data-country="34"  value="185">Полтава</option>
+																							<option    data-country="60"  value="634">Порту</option>
+																							<option    data-country="6"  value="79">Прага</option>
+																							<option    data-country="31"  value="650">Приморско-Ахтарск</option>
+																							<option    data-country="31"  value="195">Прокопьевск</option>
+																							<option    data-country="31"  value="240">Протвино</option>
+																							<option    data-country="23"  value="404">Пружаны</option>
+																							<option    data-country="31"  value="191">Псков</option>
+																							<option    data-country="31"  value="216">Пушкино</option>
+																							<option    data-country="31"  value="163">Пущино</option>
+																							<option    data-country="17"  value="450">Пхукет</option>
+																							<option    data-country="31"  value="436">Пыть-Ях</option>
+																							<option    data-country="31"  value="106">Пятигорск</option>
+																							<option    data-country="34"  value="143">Радехов</option>
+																							<option    data-country="31"  value="221">Радужный</option>
+																							<option    data-country="1"  value="62">Рамат-Ган</option>
+																							<option    data-country="31"  value="279">Раменское</option>
+																							<option    data-country="57"  value="625">Рас-эль-Хайма</option>
+																							<option    data-country="31"  value="260">Ревда</option>
+																							<option    data-country="35"  value="263">Рено, Невада</option>
+																							<option    data-country="31"  value="114">Реутов</option>
+																							<option    data-country="23"  value="306">Речица</option>
+																							<option    data-country="34"  value="89">Ривне</option>
+																							<option    data-country="29"  value="29">Рига</option>
+																							<option    data-country="1"  value="419">Ришон ле-Цион</option>
+																							<option    data-country="34"  value="174">Ровно</option>
+																							<option    data-country="31"  value="338">Ростов-на-Дону</option>
+																							<option    data-country="35"  value="365">Роузвилль</option>
+																							<option    data-country="31"  value="212">Рубцовск</option>
+																							<option    data-country="31"  value="258">Руза</option>
+																							<option    data-country="31"  value="84">Рыбинск</option>
+																							<option    data-country="30"  value="492">Рыбница</option>
+																							<option    data-country="31"  value="63">Рязань</option>
+																							<option    data-country="31"  value="335">Саки</option>
+																							<option    data-country="31"  value="315">Салават</option>
+																							<option    data-country="31"  value="254">Салехард</option>
+																							<option    data-country="31"  value="201">Сальск</option>
+																							<option    data-country="31"  value="21">Самара</option>
+																							<option    data-country="36"  value="247">Самарканд</option>
+																							<option    data-country="35"  value="439">Сан-Франциско</option>
+																							<option   data-forward-up="3"  data-country="31"  value="337">Санкт-Петербург</option>
+																							<option    data-country="35"  value="379">Саннивейл</option>
+																							<option    data-country="31"  value="32">Саранск</option>
+																							<option    data-country="31"  value="5">Саратов</option>
+																							<option    data-country="34"  value="407">Светловодск</option>
+																							<option    data-country="31"  value="503">Светлоград</option>
+																							<option    data-country="31"  value="620">Светогорск</option>
+																							<option    data-country="31"  value="90">Севастополь</option>
+																							<option    data-country="31"  value="402">Северодвинск</option>
+																							<option    data-country="34"  value="380">Северодонецк</option>
+																							<option    data-country="28"  value="418">Семипалатинск</option>
+																							<option    data-country="31"  value="374">Сергиев Посад</option>
+																							<option    data-country="31"  value="357">Серебряные Пруды</option>
+																							<option    data-country="31"  value="118">Серпухов</option>
+																							<option    data-country="31"  value="190">Сибай</option>
+																							<option    data-country="31"  value="91">Симферополь</option>
+																							<option    data-country="59"  value="632">Сингапур</option>
+																							<option    data-country="60"  value="641">Синтра</option>
+																							<option    data-country="31"  value="420">Сланцы</option>
+																							<option    data-country="31"  value="109">Смоленск</option>
+																							<option    data-country="23"  value="452">Сморгонь</option>
+																							<option    data-country="31"  value="489">Советская Гавань</option>
+																							<option    data-country="23"  value="226">Солигорск</option>
+																							<option    data-country="31"  value="389">Солнечногорск</option>
+																							<option    data-country="31"  value="484">Сортавала</option>
+																							<option    data-country="31"  value="616">Сосновый Бор</option>
+																							<option    data-country="5"  value="268">София</option>
+																							<option    data-country="31"  value="54">Сочи</option>
+																							<option    data-country="31"  value="76">Ставрополь</option>
+																							<option    data-country="33"  value="327">Стамбул</option>
+																							<option    data-country="31"  value="377">Старая Русса</option>
+																							<option    data-country="34"  value="448">Старобельск</option>
+																							<option    data-country="31"  value="396">Старый Оскол</option>
+																							<option    data-country="34"  value="228">Стаханов</option>
+																							<option    data-country="28"  value="155">Степногорск</option>
+																							<option    data-country="28"  value="415">Степняк</option>
+																							<option    data-country="31"  value="206">Стерлитамак</option>
+																							<option    data-country="32"  value="199">Стокгольм</option>
+																							<option    data-country="31"  value="287">Ступино</option>
+																							<option    data-country="34"  value="165">Сумы</option>
+																							<option    data-country="31"  value="6">Сургут</option>
+																							<option    data-country="31"  value="274">Сызрань</option>
+																							<option    data-country="31"  value="33">Сыктывкар</option>
+																							<option    data-country="31"  value="19">Таганрог</option>
+																							<option    data-country="2"  value="74">Таллин</option>
+																							<option    data-country="31"  value="110">Тамбов</option>
+																							<option    data-country="28"  value="458">Тараз</option>
+																							<option    data-country="36"  value="60">Ташкент</option>
+																							<option    data-country="19"  value="293">Тбилиси</option>
+																							<option    data-country="31"  value="36">Тверь</option>
+																							<option    data-country="31"  value="252">Теберда</option>
+																							<option    data-country="1"  value="147">Тель Авив</option>
+																							<option    data-country="34"  value="159">Тернополь</option>
+																							<option    data-country="61"  value="648">Тиват</option>
+																							<option    data-country="34"  value="92">Тирасполь</option>
+																							<option    data-country="30"  value="141">Тирасполь</option>
+																							<option    data-country="31"  value="233">Тихорецк</option>
+																							<option    data-country="31"  value="55">Тольятти</option>
+																							<option    data-country="31"  value="16">Томск</option>
+																							<option    data-country="24"  value="305">Торонто</option>
+																							<option    data-country="18"  value="328">Торревьеха</option>
+																							<option    data-country="31"  value="286">Трёхгорный</option>
+																							<option    data-country="31"  value="477">Троицк</option>
+																							<option    data-country="16"  value="472">Труа</option>
+																							<option    data-country="31"  value="161">Туапсе</option>
+																							<option    data-country="31"  value="44">Тула</option>
+																							<option    data-country="31"  value="17">Тюмень</option>
+																							<option    data-country="34"  value="93">Ужгород</option>
+																							<option    data-country="31"  value="68">Улан-Удэ</option>
+																							<option    data-country="31"  value="45">Ульяновск</option>
+																							<option    data-country="34"  value="467">Умань</option>
+																							<option    data-country="28"  value="142">Уральск</option>
+																							<option    data-country="31"  value="213">Усинск</option>
+																							<option    data-country="31"  value="388">Усолье-Сибирское</option>
+																							<option    data-country="31"  value="73">Уссурийск</option>
+																							<option    data-country="28"  value="347">Усть-Каменогорск</option>
+																							<option    data-country="31"  value="37">Уфа</option>
+																							<option    data-country="31"  value="80">Ухта</option>
+																							<option    data-country="31"  value="77">Феодосия</option>
+																							<option    data-country="31"  value="333">Феодосия</option>
+																							<option    data-country="35"  value="497">Форт Лодердейл</option>
+																							<option    data-country="26"  value="403">Франкфурт-на-Майне</option>
+																							<option    data-country="57"  value="626">Фуджейра</option>
+																							<option    data-country="31"  value="38">Хабаровск</option>
+																							<option    data-country="31"  value="187">Хабары</option>
+																							<option    data-country="1"  value="421">Хайфа</option>
+																							<option    data-country="31"  value="355">Ханты-Мансийск</option>
+																							<option    data-country="34"  value="282">Харцызск</option>
+																							<option    data-country="34"  value="22">Харьков</option>
+																							<option    data-country="31"  value="296">Хасавюрт</option>
+																							<option    data-country="10"  value="198">Хельсинки</option>
+																							<option    data-country="34"  value="211">Херсон</option>
+																							<option    data-country="61"  value="646">Херцег-Нови</option>
+																							<option    data-country="31"  value="208">Химки</option>
+																							<option    data-country="34"  value="215">Хмельницкий</option>
+																							<option    data-country="12"  value="302">Худжанд</option>
+																							<option    data-country="29"  value="243">Царникава</option>
+																							<option    data-country="58"  value="631">Цюрих</option>
+																							<option    data-country="31"  value="295">Чайковский</option>
+																							<option    data-country="31"  value="8">Чебоксары</option>
+																							<option    data-country="31"  value="9">Челябинск</option>
+																							<option    data-country="23"  value="245">Червень</option>
+																							<option    data-country="31"  value="94">Череповец</option>
+																							<option    data-country="34"  value="26">Черкассы</option>
+																							<option    data-country="31"  value="440">Черкесск</option>
+																							<option    data-country="34"  value="257">Чернигов</option>
+																							<option    data-country="34"  value="52">Черновцы</option>
+																							<option    data-country="31"  value="376">Черноголовка</option>
+																							<option    data-country="31"  value="273">Черногорск</option>
+																							<option    data-country="31"  value="151">Чехов</option>
+																							<option    data-country="31"  value="111">Чита</option>
+																							<option    data-country="31"  value="332">Шадринск</option>
+																							<option    data-country="31"  value="459">Шатура</option>
+																							<option    data-country="31"  value="219">Шахты</option>
+																							<option    data-country="26"  value="312">Штутгарт</option>
+																							<option    data-country="31"  value="180">Шуя</option>
+																							<option    data-country="28"  value="408">Шымкент</option>
+																							<option    data-country="31"  value="42">Щелково</option>
+																							<option    data-country="60"  value="639">Эвора</option>
+																							<option    data-country="15"  value="269">Эдинбург</option>
+																							<option    data-country="31"  value="194">Электросталь</option>
+																							<option    data-country="31"  value="505">Элиста</option>
+																							<option    data-country="57"  value="627">Эль-Айн</option>
+																							<option    data-country="31"  value="435">Энгельс</option>
+																							<option    data-country="31"  value="227">Югра</option>
+																							<option    data-country="31"  value="352">Южно-Сахалинск</option>
+																							<option    data-country="31"  value="470">Южноуральск</option>
+																							<option    data-country="34"  value="160">Южный</option>
+																							<option    data-country="31"  value="301">Юрга</option>
+																							<option    data-country="31"  value="101">Якутск</option>
+																							<option    data-country="31"  value="285">Ялта</option>
+																							<option    data-country="36"  value="495">Янгибазар</option>
+																							<option    data-country="31"  value="1">Ярославль</option>
+																							<option    data-country="31"  value="237">Ярцево</option>
+																							<option    data-country="31"  value="469">Яшалта</option>
+																					</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="filters__group _customers vacancies__filters" data-filter-category>
+							<div class="vacancies__filters-title">Заказчик</div>
+							<div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  checked type="radio" name="CUSTOMER_TYPE_ID" value=""/>
+											<span class="vacancies__filters-check-item-line">Все</span>
+											<span class="ideal-radio checked"></span>										</label>
+									</div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  type="radio" name="CUSTOMER_TYPE_ID" value="1"/>
+											<span class="vacancies__filters-check-item-line">Компания</span>
+																					</label>
+									</div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  type="radio" name="CUSTOMER_TYPE_ID" value="2"/>
+											<span class="vacancies__filters-check-item-line">Частное лицо</span>
+																					</label>
+									</div>
+															</div>
+						</div>
+						<div class="filters__group vacancies__filters" data-filter-category>
+							<div class="vacancies__filters-title">Тип тендера</div>
+							<div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  checked type="radio" name="TENDER_TYPE" value=""/>
+											<span class="vacancies__filters-check-item-line">Все</span>
+										</label>
+									</div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  type="radio" name="TENDER_TYPE" value="Y"/>
+											<span class="vacancies__filters-check-item-line">Публичный</span>
+										</label>
+									</div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  type="radio" name="TENDER_TYPE" value="N"/>
+											<span class="vacancies__filters-check-item-line">Приватный</span>
+										</label>
+									</div>
+															</div>
+						</div>
+						<div class="filters__group vacancies__filters" data-filter-category>
+							<div class="vacancies__filters-title">Статус</div>
+							<div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  checked type="radio" name="STATUS" value=""/>
+											<span class="vacancies__filters-check-item-line">Все</span>
+										</label>
+									</div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  type="radio" name="STATUS" value="published"/>
+											<span class="vacancies__filters-check-item-line">Идет прием заявок</span>
+										</label>
+									</div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  type="radio" name="STATUS" value="finished"/>
+											<span class="vacancies__filters-check-item-line">Прием заявок завершен</span>
+										</label>
+									</div>
+																	<div class="vacancies__filters-check-item">
+										<label class="ideal-radiocheck-label">
+											<input  type="radio" name="STATUS" value="closed"/>
+											<span class="vacancies__filters-check-item-line">Завершён</span>
+										</label>
+									</div>
+															</div>
+						</div>
+					</form>
+				</div>
+				<br/>
+				
+<div class="t-a-c ">
+	<!--'start_frame_cache_hoOYLG'--><div class="banner-wrap"><!--'start_frame_cache_VdK7aN'--><a data-banner-click="88" data-ext-link-allow href="https://awards.ratingruneta.ru/?utm_source=workspace&utm_content=rating" target="_blank"  data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://awards.ratingruneta.ru/?utm_source=workspace&amp;utm_content=rating" data-analytics-block="content"><img alt="" title="" src="/upload/rk/ba6/1ctf5kinpt2pr953vl9bwngpert37s70/2026_1_konkurs-reytinga-_2_.png" width="550" height="720" style="border:0;" /></a><!--'end_frame_cache_VdK7aN'--></div><div class="banner-wrap-link u-mt-10"><span class="c-link _gray3 u-mr-15 mr-30" style="cursor:default"><svg class="c-svg-icon u-va-top v-align-txt-top" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+				  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" fill="currentColor" stroke="none"/>
+				</svg>Реклама</span><a href="/advertising/#banners" class="c-link _gray3"><svg class="c-svg-icon u-va-top v-align-txt-top" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="10" cy="10" r="10" fill="currentColor" stroke="none"/>
+					<path d="M10.064 7.11408C9.49 7.11408 9 6.63809 9 6.05008C9 5.46208 9.49 5.00008 10.064 5.00008C10.652 5.00008 11.128 5.46208 11.128 6.05008C11.128 6.63809 10.652 7.11408 10.064 7.11408ZM10.9617 15.1141H9.18372V8.35202H10.9617V15.1141Z" fill="white" stroke="none"/>
+					</svg> Хотите быть здесь?</a></div><!--'end_frame_cache_hoOYLG'--></div>			</div>
+			<div class="grid__content _tenders"  data-scroll="1">
+				<div class="tender-list-header">
+					<div class="tender-list-header__search">
+						<i class="fa fa-search" aria-hidden="true"></i>
+						<input type="search" name="N" value=""
+							   placeholder="Найти тендер" data-tender-name-filter/>
+					</div>
+				</div>
+				<div class="tender-list-header__bottom tender-list-header__bottom_with-margin">
+					<div class="tender-list-header__count" data-tender-list-count-text>
+						Найдено 13757 тендеров:					</div>
+					<div class="gorizontal-radio _tenders _new" data-complex-sort>
+						<form action="/" data-also-filter-form="">
+															<label data-complex-sort-item class=" _active">
+									<input type="radio"  checked name="SORT" value="public"/>
+									<span>Дата публикации <i class="fa fa-caret-down" data-complex-sort-item-arr></i></span>
+								</label>
+															<label data-complex-sort-item class="">
+									<input type="radio"  name="SORT" value="budget"/>
+									<span>Бюджет <i class="fa fa-caret-down" data-complex-sort-item-arr></i></span>
+								</label>
+															<label data-complex-sort-item class="">
+									<input type="radio"  name="SORT" value="deadline"/>
+									<span>Крайний срок приема заявок <i class="fa fa-caret-down" data-complex-sort-item-arr></i></span>
+								</label>
+																					<input type='hidden' name="ORDER" data-complex-sort-hidden-inp value="0"/>
+						</form>
+					</div>
+				</div>
+								<div data-tender-public-list>
+												<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public "
+											 data-change-status-text="open">
+											Идет прием заявок										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">2189</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/sozdanie-kreativa-scenariev-dlya-vertikalnogo-kontenta-reels-polnoe-vedenie-smm-18993/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18088"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>Создание креатива, сценариев для вертикального контента/reels — Полное ведение SМM</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">300 000&nbsp;-&nbsp;900 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">01 октября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">24 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+													<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public "
+											 data-change-status-text="open">
+											Идет прием заявок										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">2519</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/sozdanie-i-seo-prodvizhenie-sayta-zerkala-dlya-magazina-dverey-v-taganroge-vyhod-v-top-10-yandeksa-i-google-18991/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18086"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>Создание и SEO-продвижение сайта-зеркала для магазина дверей в Таганроге (выход в ТОП-10 Яндекса и Google)</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">до&nbsp;100 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">01 октября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">16 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+													<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public "
+											 data-change-status-text="open">
+											Идет прием заявок										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">2798</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/mobilnaya-igra-v-zhanre-voenno-ekonomicheskoy-strategii-18988/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18083"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>Мобильная игра в жанре военно-экономической стратегии</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">от&nbsp;1 600 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">30 сентября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">15 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+													<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public "
+											 data-change-status-text="open">
+											Идет прием заявок										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">2680</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/razvitie-akkaunta-kompanii-v-socseti-18987/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18082"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>Развитие аккаунта компании в соцсети</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">до&nbsp;100 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">30 сентября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">10 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+													<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public "
+											 data-change-status-text="open">
+											Идет прием заявок										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">4586</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/razrabotka-dvustoronney-ii-platformy-kommunikaciy-18985/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18080"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>Разработка двусторонней ИИ-платформы коммуникаций</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">от&nbsp;900 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">30 сентября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">12 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+													<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public "
+											 data-change-status-text="open">
+											Идет прием заявок										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">3025</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/sformirovat-pozicionirovanie-prilozheniya-i-bloga-o-pitanii-18984/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18079"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>Сформировать позиционирование приложения и блога о питании</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">100 000&nbsp;-&nbsp;300 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">29 сентября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">07 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+													<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public "
+											 data-change-status-text="open">
+											Идет прием заявок										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">6067</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/vnedrenie-programmy-gde-budet-vestis-vsya-rabota-logistov-po-fbs-18982/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18077"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>Внедрение программы, где будет вестись вся работа логистов по FBS</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">100 000&nbsp;-&nbsp;300 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">28 сентября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">05 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+													<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public "
+											 data-change-status-text="open">
+											Идет прием заявок										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">6212</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/ai-vidzhet-dlya-sayta-it-agentstva-18981/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18076"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>AI-виджет для сайта IT-агентства</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">до&nbsp;100 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">28 сентября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">10 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+													<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public _finished"
+											 data-change-status-text="close">
+											Прием заявок завершен										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">4236</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/mobilnoe-prilozhenie-dostavki-18974/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18069"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>Мобильное приложение доставки</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">до&nbsp;250 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">28 сентября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">02 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+													<div class="vacancies__card _tender" data-tender-card data-user-own-comment-parent-block>
+								<div class="vacancies__card-info-tags _tenders">
+																		<div class="b-tender__card-bottom">
+										<div class="tendercart-type__status-public _finished"
+											 data-change-status-text="close">
+											Прием заявок завершен										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _public">Публичный</span>
+										</div>
+										<div class="vacancies__item-settings">
+											<span class="reference _views">3615</span>
+										</div>
+									</div>
+									<div class="tendercart-type__status _with-comment">
+																			</div>
+								</div>
+
+								<div class="b-tender__block--title">
+																			<div class="b-tender__title _wide">
+											<a
+												href="/tenders/kompleksnoe-prodvizhenie-federalnogo-sayta-muzykalnyh-shkol-18976/"
+												
+												data-analytics-event="click"
+
+												data-analytics-entity="tender"
+												data-analytics-id="18071"
+
+												data-analytics-source="catalog"
+												data-analytics-block="teaser-title"
+											>Комплексное продвижение федерального сайта музыкальных школ</a>
+
+											
+																					</div>
+										<div class="b-tender__info-item-text">300 000&nbsp;-&nbsp;900 000&nbsp;<span class="rub _bold"></span></div>
+																										</div>
+								<div class="b-tender__info">
+																											<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Опубликован</div>
+										<div class="b-tender__info-item-text">28 сентября 2026</div>
+									</div>
+									<div class="b-tender__info-item">
+										<div class="b-tender__info-item-title">Крайний срок приема заявок:</div>
+										<div
+											class="b-tender__info-item-text">03 октября 2026</div>
+									</div>
+																	</div>
+															</div>
+						
+											<div class="box-more">
+							<a href="/tenders/?SORT=public&ORDER=0&page=2" class="box-more__btn" data-page="2">
+								Показать ещё <em>10</em>
+							</a>
+						</div>
+									</div>
+			</div>
+		</div>
+	</div>
+
+
+	<span data-header-start-value="tender"></span>	<!-- width content_end -->
+	</div>
+
+	<footer data-footer class="footer " data-opinion-btn-unfixed>
+		<div data-back-btn-unfixed class="footer__goto">
+			<a data-back-btn-fixed class="footer__goto-up" data-goto-up
+			   href="javascript:void(0);">Наверх <i class="fa fa-angle-up" aria-hidden="true"></i></a>
+		</div>
+		<div class='footer__chat-btns' data-fixed-cb-buttons>
+			<a href='https://t.me/workspace_robot' target='_blank' class='footer__chat-btn' data-ext-link-allow data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://t.me/workspace_robot" data-analytics-block="content">
+				<svg class="c-svg-icon _lg u-va-txt-top">
+					<use xlink:href="/local/templates/tender_v2/ws_build/images/d-tender-sprite.svg#chatbot"></use>
+				</svg>&nbsp;
+				Чат-бот
+			</a>
+			<div class='footer__chat-btn-balloon _left'>Подпишитесь на тендеры/лиды, узнайте больше о работе проекта, оставьте отзыв или задайте вопрос</div>
+
+			<a href='/contacts/' target='_blank' class='footer__chat-btn'>Обратная связь</a>
+			<div class='footer__chat-btn-balloon nowrap'>Свяжитесь с менеджером проекта</div>
+		</div>
+
+		<div class='footer__grid page-inner__container'>
+			<div class='footer__grid-col d-flex align-items-center'><a class="footer__logo" href="/" aria-label="На главную Workspace"></a></div>
+			<div class='footer__grid-col _subscribe d-flex align-items-center'>
+				<div class='footer__top-row-subscribe'>
+					Подписывайтесь на наc
+					в&nbsp;Телеграм:&nbsp;<a class='c-link _underline _gray3-type2' target='_blank' href='https://t.me/workspace' data-ext-link-allow data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://t.me/workspace" data-analytics-block="content">t.me/workspace</a>
+					&nbsp;и&nbsp;Max:&nbsp;<a class='c-link _underline _gray3-type2' target='_blank' href='https://max.ru/workspace' data-ext-link-allow data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://max.ru/workspace" data-analytics-block="content">max.ru/workspace</a>
+				</div>
+			</div>
+			<div class='footer__grid-col d-flex align-items-center'>
+				<a href='https://t.me/workspace_robot' target='_blank' class='button button--outline _radius-lg u-ml-auto u-px-20 u-trs-fast' data-ext-link-allow data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://t.me/workspace_robot" data-analytics-block="content">
+					<svg class="c-svg-icon _lg u-va-txt-top">
+						<use xlink:href="/local/templates/tender_v2/ws_build/images/d-tender-sprite.svg#chatbot"></use>
+					</svg>&nbsp;
+					Чат-бот
+				</a>
+				<a href="/contacts/" aria-label="Обратная связь" class='button button--outline _radius-lg u-px-20 u-trs-fast'>Обратная связь</a>
+			</div>
+
+			
+		<section class='footer__grid-col footer__block'>
+							<div class="footer__block-title">Тендеры и лиды</div>
+			
+			<ul class="footer__list">
+
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Тендерная площадка"
+														href="/b2b/"
+						>Тендерная площадка</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Как это работает"
+														href="/how-it-works/"
+						>Как это работает</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Перейти в каталог тендеров"
+														href="/tenders/"
+						>Каталог тендеров</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+							data-footer-tender-create							aria-label="Организовать тендер"
+														href="/create/"
+						>Организовать тендер</a>					</li>
+							</ul>
+		</section>
+	
+		<section class='footer__grid-col footer__block'>
+							<div class="footer__block-title">Исполнители</div>
+			
+			<ul class="footer__list">
+
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Перейти в каталог диджитал-агентств"
+														href="/contractors/"
+						>Диджитал-агентства</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Каталог специалистов"
+														href="/people/"
+						>Специалисты</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Отзывы об агентствах"
+														href="/gratitude-letters/"
+						>Отзывы об агентствах</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Узнать стоимость услуг агентств"
+														href="/calculator/"
+						>Стоимость услуг</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Рейтинги"
+														href="/rating/"
+						>Рейтинги</a>					</li>
+							</ul>
+		</section>
+	
+		<section class='footer__grid-col footer__block'>
+							<div class="footer__block-title">Медиа</div>
+			
+			<ul class="footer__list">
+
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Перейти в каталог кейсов"
+														href="/cases/"
+						>Кейсы</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Статьи"
+														href="/blog/"
+						>Статьи</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Афиша"
+														href="/events/"
+						>Афиша</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Слово экспертам"
+														href="/expert/"
+						>Слово экспертам</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Документация"
+														href="/docs/"
+						>Документация</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Новости компаний"
+														href="/news/"
+						>Новости компаний</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Интервью"
+														href="/interview/"
+						>Интервью</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Видео"
+														href="/video/"
+						>Видео</a>					</li>
+							</ul>
+		</section>
+	
+		<section class='footer__grid-col footer__block'>
+							<div class="footer__block-title">Информация</div>
+			
+			<ul class="footer__list">
+
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="О проекте"
+														href="/about/"
+						>О проекте</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Новости проекта"
+														href="/project-news/"
+						>Новости проекта</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Каталог задач"
+														href="/advertising/"
+						>Платные опции</a><span class="footer__list-item-fire"></span>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Помощь"
+														href="/help/"
+						>Помощь</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Наша айдентика"
+														href="/corporate-identity/"
+						>Наша айдентика</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Наш пульс в ТГ"
+														href="/pulse/"
+						>Наш пульс в ТГ</a>					</li>
+							</ul>
+		</section>
+	
+		<section class='footer__grid-col footer__block'>
+							<div class="footer__block-title">Другое</div>
+			
+			<ul class="footer__list">
+
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Премия WDA"
+							target="_blank"							href="/awards/"
+						>Премия WDA</a>							<span class="header__menu-item-badge"></span>
+											</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Перейти в каталог инструментов"
+														href="/tools/"
+						>Инструменты</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Вакансии"
+														href="/vacancies/"
+						>Вакансии</a>					</li>
+									<li class="footer__list-item">
+						<a
+							class='c-link _underline _gray3-type2'
+														aria-label="Каталог премий"
+														href="/contests/"
+						>Каталог премий</a>					</li>
+							</ul>
+		</section>
+	
+			<section class='footer__grid-col footer__bottom-col'>
+				<ul class="footer__social">
+					<li><a class="footer__social-item _telegram" target="_blank" href="https://t.me/workspace" aria-label="Workspace в
+					Telegram" rel="noopener noreferrer" data-ext-link-allow="" data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://t.me/workspace" data-analytics-block="content"></a></li>
+
+					<li><a class="footer__social-item _vk" target="_blank" href="https://vk.com/workspace_ru" aria-label="Workspace в VK"
+						   rel="noopener noreferrer" data-ext-link-allow="" data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://vk.com/workspace_ru" data-analytics-block="content"></a></li>
+
+					<li><a class="footer__social-item _yandex" target="_blank"
+						   href="https://dzen.ru/workspace" aria-label="Workspace на Яндекс.Дзен" rel="noopener noreferrer" data-ext-link-allow="" data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://dzen.ru/workspace" data-analytics-block="content"></a></li>
+
+					<li><a class="footer__social-item _twitter" target="_blank" href="https://x.com/WORKSPACE_ru" aria-label="Workspace в X"
+					       rel="noopener noreferrer" data-ext-link-allow="" data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://x.com/WORKSPACE_ru" data-analytics-block="content"></a></li>
+
+					<li><a class="footer__social-item _star" target="_blank" href="/company/workspace/" aria-label="Workspace"
+					       rel="noopener noreferrer" data-ext-link-allow=""></a></li>
+				</ul>
+			</section>
+
+			<section class='footer__grid-col footer__copyright footer__bottom-col _middle'>© 2026, ООО «Воркспейс»</section>
+
+			<section class='footer__grid-col footer__bottom-col _last'>
+				<!-- Yandex.Metrika informer -->
+				<a href="/redirect/?url=aHR0cHM6Ly9tZXRyaWthLnlhbmRleC5ydS9zdGF0Lz9pZD0zNDE1MjgzMCZhbXA7ZnJvbT1pbmZvcm1lcg%3D%3D&backurl=%2Ftenders%2F" target="_blank" rel="nofollow noopener noreferrer"
+				   target="_blank" rel="nofollow" class='u-mr-30' data-analytics-event="click" data-analytics-entity="external_link" data-analytics-id="https://metrika.yandex.ru/stat/?id=34152830&amp;amp;from=informer" data-analytics-block="content"><img src="https://informer.yandex.ru/informer/34152830/3_0_203F51FF_001F31FF_1_pageviews"
+				                                                         style="width:88px; height:31px; border:0" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и
+				                                       уникальные
+				                                       посетители)" class="ym-advanced-informer" data-cid="34152830" data-lang="ru" /></a>
+				<!-- /Yandex.Metrika informer -->
+				<div>
+					<div class='footer__confidential-item u-mb-7'>
+						Workspace — зарегистрированный торговый знак. Свидетельство №846654, №604820 и №99363.
+					</div>
+					<ul class="footer__confidential footer__list">
+						<li class="footer__confidential-item">
+							<a class='c-link _underline _gray4' href="/upload/security_policy.pdf" aria-label="Скачать файл 'Политика обработки персональных данных'" target="_blank">
+								Политика обработки персональных данных
+							</a>
+						</li>
+						<li class="footer__confidential-item">
+							<a class='c-link _underline _gray4' href="/upload/terms_of_use.pdf" aria-label="Скачать файл 'Пользовательское соглашение'" target="_blank">
+								Пользовательское соглашение
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+					<div class='footer-cookies-consent' data-cookies-consent>
+				<div class='page-inner__container d-flex align-items-center footer-cookies-consent__inner'>
+					<p class='u-my-auto'>
+						Нажмите «ОК», если вы соглашаетесь с
+						<a href="/upload/security_policy.pdf" target="_blank" class='c-link _underline'>условиями</a>
+						обработки cookie и ваших данных о&nbsp;поведении на&nbsp;сайте, необходимых для&nbsp;аналитики.
+						Запретить обработку cookie можете через браузер.
+					</p>
+				<button class='footer-cookies-consent__btn button button--blue text-uppercase' data-cookies-consent-btn='/api-v/set/cookies/consent/accept/'>ок</button>
+				<button class='footer-cookies-consent__btn-close c-link _gray4-type1 d-if u-btn-reset'
+				        aria-label='Закрыть уведомление о cookie'
+				        data-cookies-consent-btn='/api-v/set/cookies/consent/decline/' data-cookies-consent-btn-close>
+					<svg class="c-svg-icon _xsm">
+						<use xlink:href="/local/templates/tender_v2/ws_build/images/d-tender-sprite.svg#close"></use>
+					</svg>
+				</button>
+				</div>
+			</div>
+			</footer>
+		<noscript>
+			<div><img src="https://mc.yandex.ru/watch/34152830" style="position:absolute; left:-9999px;" alt="" /></div>
+		</noscript>
+		<noscript><img src="//counter.rambler.ru/top100.cnt?pid=7123451" alt="Топ-100" /></noscript>
+	<noscript><img src="https://certify.alexametrics.com/atrk.gif?account=yoHzv1CJLq20jn" style="display:none" height="1" width="1" alt="" /></noscript>
+		<noscript><img src="https://vk.com/rtrg?p=VK-RTRG-900899-1oTXR" style="position:fixed; left:-999px;" alt="" /></noscript>
+
+<script  src="/bitrix/cache/js/s1/tender_v2/template_1dd84fe9d7f86d081616e5f93b1bc0b7/template_1dd84fe9d7f86d081616e5f93b1bc0b7_v1.js?1790951597538784"></script>
+
+
+<script>window.b_want_stat = true</script><script>
+(function () {
+    if (navigator.webdriver) return; // явная автоматизация (Selenium/Playwright по умолчанию) — не тратим маячок
+
+    function getCookie(name) {
+        var m = document.cookie.match('(?:^|; )' + name + '=([^;]*)');
+        return m ? decodeURIComponent(m[1]) : '';
+    }
+
+    var delay = 2500 + Math.random() * 1500; // 2.5–4с, не мгновенно
+
+    setTimeout(function () {
+        var token = getCookie('bp_bcn');
+        if (!token || !('sendBeacon' in navigator)) return;
+
+        var blob = new Blob(['token=' + encodeURIComponent(token)], {
+            type: 'application/x-www-form-urlencoded'
+        });
+        navigator.sendBeacon('/ajax/bp_engagement.php', blob);
+    }, delay);
+})();
+</script>
+</body>
+</html>
+<div class="modal" data-ext-link-confirm-popup data-modal-popup>
+	<div class="modal__overlay" tabindex="-1">
+		<div class="pop-up__wrapper pop-up__wrapper--narrow2">
+			<button type="button" class="pop-up__close" data-modal-popup-close aria-label="Закрыть"></button>
+
+			<div class="pop-up__main">
+				<h3 class="pop-up__title">Переход на внешний сайт</h3>
+				<p class="pop-up__text">Подтвердите переход по ссылке:</p>
+				<p class="pop-up__text">
+					<a href=""
+					   class="button button--change _big pop-up__link-button"
+					   target="_blank"
+					   data-ext-link-confirm-link
+					   data-ext-link-allow
+					   data-metric-goals='{"yaText":"pop_up_go_to_external_site","gaCategory":"pop_up_external_site","gaAction":"click","gaLabel":"url"}'
+					>
+						<i class="button__icon button__icon--ext-link"></i>
+						Перейти на: <span data-ext-link-confirm-text></span>
+					</a>
+				</p>
+			</div>
+
+			<div class="pop-up__footer">
+				<div class="pop-up__text">
+					<div class="pop-up__note-create-tender">
+						<div><b>Создавайте тендеры на WORKSPACE.RU</b></div>
+						<div>17 000+ агентств готовы обсудить новый проект.</div>
+					</div>
+				</div>
+
+				<a href="/create/"
+				   class="pop-up__button pop-up__button--target"
+				   target="_blank"
+				   data-metric-goals='{"yaText":"pop_up_create_tender","gaCategory":"pop_up_external_site","gaAction":"click","gaLabel":"button"}'
+				>Организовать тендер</a>
+			</div>
+		</div>
+	</div>
+</div>

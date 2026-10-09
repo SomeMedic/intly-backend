@@ -1,0 +1,269 @@
+name: intly-backend
+x-backend-env-file: &backend-env-file
+  - path: ${INTLY_DEPLOY_ENV_FILE:-.env}
+    required: false
+x-backend-image: &backend-image ${INTLY_BACKEND_IMAGE:-intly-backend:${INTLY_IMAGE_TAG:-local}}
+services:
+  api:
+    image: *backend-image
+    build: .
+    restart: unless-stopped
+    env_file: *backend-env-file
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 3001
+      RUN_WORKERS: "false"
+      SOURCE_SCHEDULER_ENABLED: ${SOURCE_SCHEDULER_ENABLED:-true}
+      FRONTEND_URL: ${FRONTEND_URL:-https://intly.tech}
+      MONGODB_URI: mongodb://${MONGO_ROOT_USER:-intly}:${MONGO_ROOT_PASSWORD:?Set MONGO_ROOT_PASSWORD}@mongo:27017/intly?authSource=admin&replicaSet=intly-rs
+      REDIS_URL: redis://:${REDIS_PASSWORD:?Set REDIS_PASSWORD}@redis:6379
+      MEILI_URL: http://meilisearch:7700
+      MINIO_ENDPOINT: minio
+      MINIO_PORT: 9000
+      MINIO_USE_SSL: "false"
+      MINIO_BUCKET: ${MINIO_BUCKET:-intly-private}
+      FIRECRAWL_API_URL: ${FIRECRAWL_API_URL:-http://firecrawl-api:3002}
+      EMBEDDING_BASE_URL: ${EMBEDDING_BASE_URL:-http://embedding:80}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-${EMBEDDING_MODEL_ID:-intfloat/multilingual-e5-small}}
+      LOG_DIRECTORY: /var/log/intly
+      BACKUP_STATUS_DIRECTORY: /var/backups/intly/status
+      BACKUP_REPOSITORY_LABEL: ${BACKUP_REPOSITORY_LABEL:-restic}
+      BACKUP_CRON_SCHEDULE: ${BACKUP_CRON_SCHEDULE:-}
+    ports: ["127.0.0.1:3001:3001"]
+    volumes:
+      - intly-logs:/var/log/intly
+      - ${BACKUP_STATUS_DIRECTORY:-/var/backups/intly/status}:/var/backups/intly/status:ro
+    depends_on:
+      mongo: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      meilisearch: { condition: service_healthy }
+      minio: { condition: service_healthy }
+      embedding: { condition: service_healthy, required: false }
+      firecrawl-api: { condition: service_healthy, required: false }
+    networks: [backend, firecrawl-internal]
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3001/api/v1/health/ready').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+  worker:
+    image: *backend-image
+    build: .
+    command: ["node", "dist/worker.js"]
+    restart: unless-stopped
+    env_file: *backend-env-file
+    environment:
+      NODE_ENV: production
+      RUN_WORKERS: "true"
+      SOURCE_SCHEDULER_ENABLED: ${SOURCE_SCHEDULER_ENABLED:-true}
+      FRONTEND_URL: ${FRONTEND_URL:-https://intly.tech}
+      MONGODB_URI: mongodb://${MONGO_ROOT_USER:-intly}:${MONGO_ROOT_PASSWORD:?Set MONGO_ROOT_PASSWORD}@mongo:27017/intly?authSource=admin&replicaSet=intly-rs
+      REDIS_URL: redis://:${REDIS_PASSWORD:?Set REDIS_PASSWORD}@redis:6379
+      MEILI_URL: http://meilisearch:7700
+      MINIO_ENDPOINT: minio
+      MINIO_PORT: 9000
+      MINIO_USE_SSL: "false"
+      MINIO_BUCKET: ${MINIO_BUCKET:-intly-private}
+      FIRECRAWL_API_URL: ${FIRECRAWL_API_URL:-http://firecrawl-api:3002}
+      EMBEDDING_BASE_URL: ${EMBEDDING_BASE_URL:-http://embedding:80}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-${EMBEDDING_MODEL_ID:-intfloat/multilingual-e5-small}}
+      LOG_DIRECTORY: /var/log/intly
+      BACKUP_STATUS_DIRECTORY: /var/backups/intly/status
+      BACKUP_REPOSITORY_LABEL: ${BACKUP_REPOSITORY_LABEL:-restic}
+      BACKUP_CRON_SCHEDULE: ${BACKUP_CRON_SCHEDULE:-}
+    volumes:
+      - intly-logs:/var/log/intly
+      - ${BACKUP_STATUS_DIRECTORY:-/var/backups/intly/status}:/var/backups/intly/status:ro
+    depends_on:
+      mongo: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      meilisearch: { condition: service_healthy }
+      minio: { condition: service_healthy }
+      embedding: { condition: service_healthy, required: false }
+      firecrawl-api: { condition: service_healthy, required: false }
+    networks: [backend, firecrawl-internal]
+  mongo:
+    image: mongo:8.2
+    restart: unless-stopped
+    entrypoint: ["/usr/local/bin/intly-mongo-replset-entrypoint"]
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER:-intly}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:?Set MONGO_ROOT_PASSWORD}
+    volumes:
+      - mongo:/data/db
+      - mongo-config:/data/configdb
+      - ./scripts/mongo/docker-entrypoint-replset.sh:/usr/local/bin/intly-mongo-replset-entrypoint:ro
+      - ./scripts/mongo/health-replset.js:/usr/local/bin/intly-mongo-health.js:ro
+    networks: [backend]
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--file", "/usr/local/bin/intly-mongo-health.js"]
+      interval: 20s
+      timeout: 10s
+      retries: 12
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes", "--requirepass", "${REDIS_PASSWORD:?Set REDIS_PASSWORD}"]
+    environment: { REDIS_PASSWORD: "${REDIS_PASSWORD:?Set REDIS_PASSWORD}" }
+    volumes: ["redis:/data"]
+    networks: [backend]
+    healthcheck:
+      test: ["CMD-SHELL", "REDISCLI_AUTH=$$REDIS_PASSWORD redis-cli ping | grep PONG"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+  meilisearch:
+    image: getmeili/meilisearch:v1.20.0
+    restart: unless-stopped
+    environment:
+      MEILI_MASTER_KEY: "${MEILI_MASTER_KEY:?Set MEILI_MASTER_KEY}"
+      MEILI_ENV: production
+      MEILI_NO_ANALYTICS: "true"
+    volumes: ["meili:/meili_data"]
+    networks: [backend]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:7700/health | grep available"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+  minio:
+    image: ${MINIO_IMAGE:-intly-minio:${INTLY_IMAGE_TAG:-local}}
+    restart: unless-stopped
+    command: server /data --console-address :9001
+    environment:
+      MINIO_ROOT_USER: "${MINIO_ACCESS_KEY:?Set MINIO_ACCESS_KEY}"
+      MINIO_ROOT_PASSWORD: "${MINIO_SECRET_KEY:?Set MINIO_SECRET_KEY}"
+    volumes: ["minio:/data"]
+    networks: [backend]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:9000/minio/health/live >/dev/null"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+  embedding:
+    image: ${EMBEDDING_IMAGE:-ghcr.io/huggingface/text-embeddings-inference:cpu-1.9}
+    profiles: ["embedding"]
+    restart: unless-stopped
+    command:
+      - --model-id
+      - ${EMBEDDING_MODEL_ID:-intfloat/multilingual-e5-small}
+      - --max-batch-tokens
+      - "${EMBEDDING_MAX_BATCH_TOKENS:-2048}"
+      - --max-batch-requests
+      - "${EMBEDDING_MAX_BATCH_REQUESTS:-4}"
+      - --max-concurrent-requests
+      - "${EMBEDDING_MAX_CONCURRENT_REQUESTS:-8}"
+      - --tokenization-workers
+      - "${EMBEDDING_TOKENIZATION_WORKERS:-2}"
+    environment:
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL_ID:-intfloat/multilingual-e5-small}
+    volumes: ["embedding-cache:/data"]
+    networks: [backend]
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1/health >/dev/null"]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+  firecrawl-playwright:
+    image: ${FIRECRAWL_PLAYWRIGHT_IMAGE:-ghcr.io/firecrawl/playwright-service@sha256:47da52c036b55580d5d0812fa530eacfe03533ebad9449a50858ff697db04f71}
+    profiles: ["firecrawl"]
+    restart: unless-stopped
+    environment:
+      PORT: 3000
+      PROXY_SERVER: ${PROXY_SERVER:-}
+      PROXY_USERNAME: ${PROXY_USERNAME:-}
+      PROXY_PASSWORD: ${PROXY_PASSWORD:-}
+      MAX_CONCURRENT_PAGES: ${FIRECRAWL_CRAWL_CONCURRENT_REQUESTS:-5}
+      BLOCK_MEDIA: ${FIRECRAWL_BLOCK_MEDIA:-true}
+    networks: [firecrawl-internal]
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: ["ALL"]
+  firecrawl-rabbitmq:
+    image: rabbitmq:3.13-management-alpine
+    profiles: ["firecrawl"]
+    restart: unless-stopped
+    command: rabbitmq-server
+    networks: [firecrawl-internal]
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "check_running"]
+      interval: 20s
+      timeout: 10s
+      retries: 10
+  firecrawl-redis:
+    image: redis:7.4-alpine
+    profiles: ["firecrawl"]
+    restart: unless-stopped
+    command: ["redis-server", "--bind", "0.0.0.0", "--appendonly", "yes", "--save", "60", "1"]
+    volumes: ["firecrawl-redis:/data"]
+    networks: [firecrawl-internal]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+  firecrawl-nuq-postgres:
+    image: ${FIRECRAWL_NUQ_POSTGRES_IMAGE:-ghcr.io/firecrawl/nuq-postgres@sha256:9b638af78d99873bc0ba2b57c9cbcd01df6ce96efeaa72d36cfbe0f76521e8fc}
+    profiles: ["firecrawl"]
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: firecrawl
+      POSTGRES_PASSWORD: "${FIRECRAWL_POSTGRES_PASSWORD:-firecrawl-local-change-me}"
+      POSTGRES_DB: postgres
+    volumes: ["firecrawl-nuq-postgres:/var/lib/postgresql/data"]
+    networks: [firecrawl-internal]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U firecrawl -d postgres"]
+      interval: 20s
+      timeout: 10s
+      retries: 10
+  firecrawl-api:
+    image: ${FIRECRAWL_IMAGE:-ghcr.io/firecrawl/firecrawl@sha256:2b5ca4e5b1a0a4c092ff15b874fa1a6a3d9af5aaa7efb13142f7ca38eea1ff6b}
+    profiles: ["firecrawl"]
+    restart: unless-stopped
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3002
+      EXTRACT_WORKER_PORT: ${FIRECRAWL_EXTRACT_WORKER_PORT:-3004}
+      WORKER_PORT: ${FIRECRAWL_WORKER_PORT:-3005}
+      REDIS_URL: redis://firecrawl-redis:6379
+      REDIS_RATE_LIMIT_URL: redis://firecrawl-redis:6379
+      PLAYWRIGHT_MICROSERVICE_URL: http://firecrawl-playwright:3000/scrape
+      POSTGRES_USER: firecrawl
+      POSTGRES_PASSWORD: "${FIRECRAWL_POSTGRES_PASSWORD:-firecrawl-local-change-me}"
+      POSTGRES_DB: postgres
+      POSTGRES_HOST: firecrawl-nuq-postgres
+      POSTGRES_PORT: 5432
+      NUQ_RABBITMQ_URL: amqp://firecrawl-rabbitmq:5672
+      USE_DB_AUTHENTICATION: "false"
+      NUM_WORKERS_PER_QUEUE: ${FIRECRAWL_NUM_WORKERS_PER_QUEUE:-2}
+      CRAWL_CONCURRENT_REQUESTS: ${FIRECRAWL_CRAWL_CONCURRENT_REQUESTS:-5}
+      MAX_CONCURRENT_JOBS: ${FIRECRAWL_MAX_CONCURRENT_JOBS:-3}
+      HARNESS_STARTUP_TIMEOUT_MS: ${FIRECRAWL_HARNESS_STARTUP_TIMEOUT_MS:-60000}
+      ENV: local
+    command: ["node", "dist/src/harness.js", "--start-docker"]
+    depends_on:
+      firecrawl-redis: { condition: service_started }
+      firecrawl-playwright: { condition: service_started }
+      firecrawl-rabbitmq: { condition: service_healthy }
+      firecrawl-nuq-postgres: { condition: service_healthy, required: false }
+    networks: [firecrawl-internal]
+    healthcheck:
+      test: ["CMD-SHELL", "node -e \"fetch('http://127.0.0.1:3002/v0/health/readiness').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))\""]
+      interval: 30s
+      timeout: 10s
+      retries: 10
+networks:
+  backend: { driver: bridge }
+  firecrawl-internal:
+    driver: bridge
+volumes:
+  mongo:
+  mongo-config:
+  redis:
+  meili:
+  minio:
+  embedding-cache:
+  intly-logs:
+  firecrawl-redis:
+  firecrawl-nuq-postgres:

@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-10-06T15:23:18.733Z",
+  "requestUrl": "https://www.fabrikant.ru/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw",
+  "finalUrl": "https://www.fabrikant.ru/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw",
+  "sha256": "ca811e927d50887f1ef1b2d8bb12c2ac6940a90c54fb096f919b6b83668ea0a2",
+  "htmlBytes": 201734,
+  "cards": [
+    {
+      "card": {
+        "id": "679731433",
+        "procedureNumber": "5583349",
+        "lotNumber": "5",
+        "title": "автотранспортное средство KIA CERATO, 2020 года выпуска, VIN XWEFC416BLC004267",
+        "text": "Аукцион продавца№ 5583349-5Ожидается начало приема заявокГИС Торгиавтотранспортное средство KIA CERATO, 2020 года выпуска, VIN XWEFC416BLC004267ОрганизаторООО \"БИЗНЕС - СТИЛЬ\"ЗаказчикМЕЖРЕГИОНАЛЬНОЕ ТЕРРИТОРИАЛЬНОЕ УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО АГЕНТСТВА ПО УПРАВЛЕНИЮ ГОСУДАРСТВЕННЫМ ИМУЩЕСТВОМ В ГОРОДЕ САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ Дата публикации06.10.2026 16:20Дата окончания приёма заявок02.11.2026 13:00747 900,00 RUBначальная ценаПлатит победитель",
+        "url": "https://www.fabrikant.ru/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw",
+        "nativeBadges": [
+          "Ожидается начало приема заявок",
+          "ГИС Торги"
+        ],
+        "nativeStatus": "Ожидается начало приема заявок",
+        "section": "ГИС Торги",
+        "organizer": "ООО \"БИЗНЕС - СТИЛЬ\"",
+        "publishedText": "06.10.2026 16:20",
+        "deadlineText": "02.11.2026 13:00",
+        "priceText": "747 900,00 RUB",
+        "participationText": "Платит победитель"
+      },
+      "catalogUrl": "https://www.fabrikant.ru/procedure/search?date_publication_from=2026-10-06&date_publication_to=2026-10-06&page_limit=40&page_number=4"
+    },
+    {
+      "card": {
+        "id": "679731434",
+        "procedureNumber": "5583349",
+        "lotNumber": "6",
+        "title": "квартира по адресу: г. Санкт-Петербург, пр. Испытателей, д.26, лит. А, кв. 87, общ. пл. 55.6 кв.м., кадастровый номер 78:34:0413001:7672",
+        "text": "Аукцион продавца№ 5583349-6Ожидается начало приема заявокГИС Торгиквартира по адресу: г. Санкт-Петербург, пр. Испытателей, д.26, лит. А, кв. 87, общ. пл. 55.6 кв.м., кадастровый номер 78:34:0413001:7672ОрганизаторООО \"БИЗНЕС - СТИЛЬ\"ЗаказчикМЕЖРЕГИОНАЛЬНОЕ ТЕРРИТОРИАЛЬНОЕ УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО АГЕНТСТВА ПО УПРАВЛЕНИЮ ГОСУДАРСТВЕННЫМ ИМУЩЕСТВОМ В ГОРОДЕ САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ Дата публикации06.10.2026 16:20Дата окончания приёма заявок02.11.2026 13:0011 327 600,00 RUBначальная ценаПлатит победитель",
+        "url": "https://www.fabrikant.ru/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw",
+        "nativeBadges": [
+          "Ожидается начало приема заявок",
+          "ГИС Торги"
+        ],
+        "nativeStatus": "Ожидается начало приема заявок",
+        "section": "ГИС Торги",
+        "organizer": "ООО \"БИЗНЕС - СТИЛЬ\"",
+        "publishedText": "06.10.2026 16:20",
+        "deadlineText": "02.11.2026 13:00",
+        "priceText": "11 327 600,00 RUB",
+        "participationText": "Платит победитель"
+      },
+      "catalogUrl": "https://www.fabrikant.ru/procedure/search?date_publication_from=2026-10-06&date_publication_to=2026-10-06&page_limit=40&page_number=4"
+    },
+    {
+      "card": {
+        "id": "679731435",
+        "procedureNumber": "5583349",
+        "lotNumber": "7",
+        "title": "машино-место по адресу: г. Санкт-Петербург, муниципальный округ Народный, Русановская ул., д.16, корп. 1, стр. 1, машино-место 15 мм, общ. пл. 14.6 кв.м., этаж №1, кадастровый номер 78:12:0006355:8141",
+        "text": "Аукцион продавца№ 5583349-7Ожидается начало приема заявокГИС Торгимашино-место по адресу: г. Санкт-Петербург, муниципальный округ Народный, Русановская ул., д.16, корп. 1, стр. 1, машино-место 15 мм, общ. пл. 14.6 кв.м., этаж №1, кадастровый номер 78:12:0006355:8141ОрганизаторООО \"БИЗНЕС - СТИЛЬ\"ЗаказчикМЕЖРЕГИОНАЛЬНОЕ ТЕРРИТОРИАЛЬНОЕ УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО АГЕНТСТВА ПО УПРАВЛЕНИЮ ГОСУДАРСТВЕННЫМ ИМУЩЕСТВОМ В ГОРОДЕ САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ Дата публикации06.10.2026 16:20Дата окончания приёма заявок02.11.2026 13:00499 900,00 RUBначальная цена",
+        "url": "https://www.fabrikant.ru/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw",
+        "nativeBadges": [
+          "Ожидается начало приема заявок",
+          "ГИС Торги"
+        ],
+        "nativeStatus": "Ожидается начало приема заявок",
+        "section": "ГИС Торги",
+        "organizer": "ООО \"БИЗНЕС - СТИЛЬ\"",
+        "publishedText": "06.10.2026 16:20",
+        "deadlineText": "02.11.2026 13:00",
+        "priceText": "499 900,00 RUB",
+        "participationText": null
+      },
+      "catalogUrl": "https://www.fabrikant.ru/procedure/search?date_publication_from=2026-10-06&date_publication_to=2026-10-06&page_limit=40&page_number=4"
+    },
+    {
+      "card": {
+        "id": "679731436",
+        "procedureNumber": "5583349",
+        "lotNumber": "8",
+        "title": "дебиторская задолженность в размере 1073629.00 руб., подтвержденная решением суда по делу №А56-53474/2024 от 07.03.2025, где дебитором является ООО «Снабжающая компания «Город», ИНН 7843011231",
+        "text": "Аукцион продавца№ 5583349-8Ожидается начало приема заявокГИС Торгидебиторская задолженность в размере 1073629.00 руб., подтвержденная решением суда по делу №А56-53474/2024 от 07.03.2025, где дебитором является ООО «Снабжающая компания «Город», ИНН 7843011231ОрганизаторООО \"БИЗНЕС - СТИЛЬ\"ЗаказчикМЕЖРЕГИОНАЛЬНОЕ ТЕРРИТОРИАЛЬНОЕ УПРАВЛЕНИЕ ФЕДЕРАЛЬНОГО АГЕНТСТВА ПО УПРАВЛЕНИЮ ГОСУДАРСТВЕННЫМ ИМУЩЕСТВОМ В ГОРОДЕ САНКТ-ПЕТЕРБУРГЕ И ЛЕНИНГРАДСКОЙ ОБЛАСТИ Дата публикации06.10.2026 16:20Дата окончания приёма заявок02.11.2026 13:00858 100,00 RUBначальная цена",
+        "url": "https://www.fabrikant.ru/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw",
+        "nativeBadges": [
+          "Ожидается начало приема заявок",
+          "ГИС Торги"
+        ],
+        "nativeStatus": "Ожидается начало приема заявок",
+        "section": "ГИС Торги",
+        "organizer": "ООО \"БИЗНЕС - СТИЛЬ\"",
+        "publishedText": "06.10.2026 16:20",
+        "deadlineText": "02.11.2026 13:00",
+        "priceText": "858 100,00 RUB",
+        "participationText": null
+      },
+      "catalogUrl": "https://www.fabrikant.ru/procedure/search?date_publication_from=2026-10-06&date_publication_to=2026-10-06&page_limit=40&page_number=4"
+    }
+  ],
+  "observedLotMarkers": [
+    {
+      "tag": "div",
+      "id": "F6hwVM_Qyku5fX2_Yq3vgw",
+      "class": "panel-heading clearfix",
+      "text": "Лот №1. автотранспортное средство VOLKSWAGEN TERAMONT, 2018 года выпуска, VIN WVGZZZCAZKC502921 - Ожидается начало приема заявок",
+      "parent": "panel panel-default panel-striped lot_head_806477"
+    },
+    {
+      "tag": "div",
+      "id": "cEvX4djCutuso5URHDUeDQ",
+      "class": "panel-heading clearfix",
+      "text": "Лот №2. 10/252 доли в общей долевой собственности на квартиру по адресу: г. Санкт-Петербург, ул. Руставели, д.37, лит. А, кв. 11, общ. пл. 471.2 кв.м., кадастровый номер 78:10:0005223:1206 - Ожидается начало приема заявок",
+      "parent": "panel panel-default panel-striped lot_head_806478"
+    },
+    {
+      "tag": "div",
+      "id": "PTXJxNmBMp83UuiHVbfSGQ",
+      "class": "panel-heading clearfix",
+      "text": "Лот №3. автотранспортное средство TOYOTA LAND CRUISER 200, 2014 года выпуска, VIN JTMHV05J904148436 - Ожидается начало приема заявок",
+      "parent": "panel panel-default panel-striped lot_head_806479"
+    },
+    {
+      "tag": "div",
+      "id": "Tvst4DQZTYDYaCM-a6k1kQ",
+      "class": "panel-heading clearfix",
+      "text": "Лот №4. автотранспортное средство РЕНО MASTER, 2014 года выпуска, VIN VF1MAF4CE50454973 - Ожидается начало приема заявок",
+      "parent": "panel panel-default panel-striped lot_head_806480"
+    },
+    {
+      "tag": "div",
+      "id": "TcXvMoaEjaM-gHjhiHnmIA",
+      "class": "panel-heading clearfix",
+      "text": "Лот №5. автотранспортное средство KIA CERATO, 2020 года выпуска, VIN XWEFC416BLC004267 - Ожидается начало приема заявок",
+      "parent": "panel panel-default panel-striped lot_head_806481"
+    }
+  ]
+}

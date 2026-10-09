@@ -1,0 +1,19 @@
+{
+  "requestedUrl": "https://www.fabrikant.ru/procedure/search?date_publication_from=2026-10-06&date_publication_to=2026-10-06&page_limit=40&page_number=2",
+  "finalUrl": "https://www.fabrikant.ru/procedure/search?date_publication_from=2026-10-06&date_publication_to=2026-10-06&page_limit=40&page_number=2",
+  "checkedAt": "2026-10-06T14:59:22.155Z",
+  "sha256": "409f8457337a3940fa71d72fcde977255d1955751fe5c78a20e1a6b2550869ed",
+  "cardCount": 40,
+  "unsupported": [
+    {
+      "id": "679731849",
+      "url": "https://market.fabrikant.ru/purchase_notice/view?id=01m48rrgwthw8m2aph3062hgbt",
+      "title": "Поставка шестеренного электронасоса",
+      "badges": [
+        "МСП",
+        "Прием предложений",
+        "Маркет"
+      ]
+    }
+  ]
+}

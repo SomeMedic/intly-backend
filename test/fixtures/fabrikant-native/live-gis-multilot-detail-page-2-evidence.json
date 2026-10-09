@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-10-06T15:24:29.706Z",
+  "requestUrl": "https://www.fabrikant.ru/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw?page=2",
+  "finalUrl": "https://www.fabrikant.ru/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw?page=2",
+  "sha256": "b12ced009d72d9bc517af46393755a5d1d3efa6f031ef8cac61a4d6a77334e61",
+  "htmlBytes": 141683,
+  "observedLotMarkers": [
+    {
+      "nativeLotId": "52JYZ-r55GGOt591sroOvQ",
+      "text": "Лот №6. квартира по адресу: г. Санкт-Петербург, пр. Испытателей, д.26, лит. А, кв. 87, общ. пл. 55.6 кв.м., кадастровый номер 78:34:0413001:7672 - Ожидается начало приема заявок"
+    },
+    {
+      "nativeLotId": "QPdD40u5Lfmwf13aqvHgeQ",
+      "text": "Лот №7. машино-место по адресу: г. Санкт-Петербург, муниципальный округ Народный, Русановская ул., д.16, корп. 1, стр. 1, машино-место 15 мм, общ. пл. 14.6 кв.м., этаж №1, кадастровый номер 78:12:0006355:8141 - Ожидается начало приема заявок"
+    },
+    {
+      "nativeLotId": "Tkr5VahnOrTDnAWklFrELg",
+      "text": "Лот №8. дебиторская задолженность в размере 1073629.00 руб., подтвержденная решением суда по делу №А56-53474/2024 от 07.03.2025, где дебитором является ООО «Снабжающая компания «Город», ИНН 7843011231 - Ожидается начало приема заявок"
+    }
+  ],
+  "pagination": [
+    "<ul class=\"pagination pagination-sm pages cr3 cf\"><li><a href=\"/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw?page=1\">1</a></li><li class=\"active\"><span>2</span></li></ul>",
+    "<ul class=\"pagination pagination-sm pages cr3 cf\"><li><a href=\"/v2/trades/procedure/view/a3UZKTFkE1oOaxv6MaqAYw?page=1\">1</a></li><li class=\"active\"><span>2</span></li></ul>"
+  ]
+}

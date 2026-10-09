@@ -1,0 +1,158 @@
+name: backend-ci
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: "Deploy this commit to production after verify and immutable image publish."
+        required: true
+        type: boolean
+        default: false
+  pull_request:
+    paths:
+      - "src/**"
+      - "test/**"
+      - "scripts/**"
+      - "operations/**"
+      - "Dockerfile"
+      - ".dockerignore"
+      - "compose.yaml"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - "tsconfig*.json"
+      - ".github/workflows/backend-ci.yml"
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: backend-ci-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Install, test, build, and validate images
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.11.0
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run typecheck
+      - run: pnpm run lint
+      - run: pnpm test
+      - run: pnpm run build
+      - run: pnpm run openapi
+      - run: bash -n operations/scripts/deploy-backend.sh
+      - run: operations/scripts/deploy-backend.sh --help
+      - run: python3 -m unittest discover -s operations/tests -p 'test_github_deploy.py'
+      - run: node scripts/verify-backend-delivery-contract.mjs
+      - run: docker compose --env-file operations/environments/compose-ci.env -f compose.yaml config --quiet
+      - if: github.event_name == 'pull_request' || (github.event_name == 'workflow_dispatch' && inputs.deploy != true)
+        run: docker build -t intly-backend:${{ github.sha }} .
+      - if: github.event_name == 'pull_request' || (github.event_name == 'workflow_dispatch' && inputs.deploy != true)
+        run: docker build -f operations/minio/Dockerfile -t intly-minio:${{ github.sha }} .
+
+  publish-image:
+    name: Publish immutable backend images
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.deploy == true))
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    outputs:
+      image: ${{ steps.image.outputs.image }}
+      minio_image: ${{ steps.image.outputs.minio_image }}
+    steps:
+      - uses: actions/checkout@v5
+      - id: image
+        run: |
+          repository="${GITHUB_REPOSITORY,,}"
+          echo "image=ghcr.io/${repository}:${GITHUB_SHA}" >> "$GITHUB_OUTPUT"
+          echo "minio_image=ghcr.io/${repository}/minio:${GITHUB_SHA}" >> "$GITHUB_OUTPUT"
+      - uses: docker/setup-buildx-action@v4
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and publish backend image
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.image.outputs.image }}
+          cache-from: type=gha,scope=intly-backend
+          cache-to: type=gha,mode=max,scope=intly-backend
+      - name: Build and publish MinIO image
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          file: operations/minio/Dockerfile
+          platforms: linux/amd64
+          push: true
+          tags: ${{ steps.image.outputs.minio_image }}
+          cache-from: type=gha,scope=intly-minio
+          cache-to: type=gha,mode=max,scope=intly-minio
+
+  deploy-production:
+    name: Deploy production backend
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.deploy == true))
+    needs: publish-image
+    runs-on: ubuntu-latest
+    environment: production
+    concurrency:
+      group: backend-production
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - uses: actions/checkout@v5
+      - name: Prepare SSH key and known hosts
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_KNOWN_HOSTS: ${{ vars.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+          install -d -m 700 "$RUNNER_TEMP/intly-ssh"
+          printf '%s\n' "$DEPLOY_SSH_KEY" > "$RUNNER_TEMP/intly-ssh/deploy_key"
+          chmod 600 "$RUNNER_TEMP/intly-ssh/deploy_key"
+          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > "$RUNNER_TEMP/intly-ssh/known_hosts"
+
+      - name: Deploy over restricted SSH command
+        env:
+          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ vars.DEPLOY_USER || 'root' }}
+          DEPLOY_PORT: ${{ vars.DEPLOY_PORT || '22' }}
+          GHCR_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tarball="$RUNNER_TEMP/intly-backend-${GITHUB_SHA}.tar"
+          git archive --format=tar --output="$tarball" HEAD
+          cleanup() {
+            rm -f "$tarball" "$RUNNER_TEMP/intly-ssh/deploy_key" "$RUNNER_TEMP/intly-ssh/known_hosts"
+          }
+          trap cleanup EXIT
+          {
+            printf '%s\n' "$GHCR_TOKEN"
+            cat "$tarball"
+          } | ssh -T \
+            -i "$RUNNER_TEMP/intly-ssh/deploy_key" \
+            -o BatchMode=yes \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes \
+            -o UserKnownHostsFile="$RUNNER_TEMP/intly-ssh/known_hosts" \
+            -p "$DEPLOY_PORT" \
+            "$DEPLOY_USER@$DEPLOY_HOST" \
+            "deploy ${GITHUB_SHA}"

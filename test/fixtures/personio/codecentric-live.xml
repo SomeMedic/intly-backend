@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workzag-jobs>
+
+<position>
+    <id>2544098</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Sales</department>
+    <recruitingCategory>Festangestellte</recruitingCategory>
+    <name>(Key) Account Manager*in (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <keywords>Key Account Management,Account Management,Retail,Insurance,Manufacturing,Public,Bestandskundenentwicklung,Fokuskundenentwicklung,Neukundenakquise</keywords>
+    <occupation>account_management_commissioned</occupation>
+    <occupationCategory>sales_and_business_development</occupationCategory>
+    <createdAt>2026-02-25T13:29:40+00:00</createdAt>
+</position>
+
+<position>
+    <id>2678289</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Sales</department>
+    <recruitingCategory>Festangestellte</recruitingCategory>
+    <name>(Key) Account Manager*in (w/d/m) Retail</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <keywords>Key Account Management,Account Management,Retail,Vertrieb,Delivery Management,Bestandskundenentwicklung,Fokuskundenentwicklung</keywords>
+    <occupation>account_management_commissioned</occupation>
+    <occupationCategory>sales_and_business_development</occupationCategory>
+    <createdAt>2026-06-18T14:51:23+00:00</createdAt>
+</position>
+
+<position>
+    <id>2433053</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Services</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>(Senior) AWS Architekt (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-or-part-time</schedule>
+    <yearsOfExperience>5-7</yearsOfExperience>
+    <keywords>Cloud,Cloud-Architektur,Blueprints,Best Practices,AWS,Cloud Native</keywords>
+    <occupation>general_and_other_it_software</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2025-11-19T15:58:08+00:00</createdAt>
+</position>
+
+<position>
+    <id>2717132</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Services</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>AI Software Engineer and Consultant (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <yearsOfExperience>2-5</yearsOfExperience>
+    <keywords>Softwareentwicklung,KI-Lösungen,Cloud-Technologien,Azure,AWS,GCP,LLMs,AI-Frameworks</keywords>
+    <occupation>general_and_other_it_software</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2026-07-17T12:16:34+00:00</createdAt>
+</position>
+
+<position>
+    <id>2325174</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Digital Integration</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Atlassian Consultant (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-or-part-time</schedule>
+    <yearsOfExperience>2-5</yearsOfExperience>
+    <keywords>Atlassian,Atlassian Apps,Bitbucket,Compass,Jira Product Discovery,Jira Guard,Bug Tracking,ITSM,Grooy,Rovo</keywords>
+    <occupation>software_and_web_development</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2025-09-05T14:52:57+00:00</createdAt>
+</position>
+
+<position>
+    <id>2742049</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Digital Integration</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Consultant Input Management - Document Intelligence and Integration (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-or-part-time</schedule>
+    <keywords>Dokumentenerkennung,Validierungsprozesse,Korrekturprozesse,Schnittstellenanbindung,Input Management,Paradatec,Insiders</keywords>
+    <occupation>general_and_other_it_software</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2026-08-05T07:48:56+00:00</createdAt>
+</position>
+
+<position>
+    <id>2716826</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Services</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Forward Deployed Engineer (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <yearsOfExperience>2-5</yearsOfExperience>
+    <keywords>Individualsoftware,KI-Lösungen,GenAI,LLM,Softwareentwicklung,Softwarearchitektur,Cloud,API,AI-Workflows,Agent Harnesses,agentic Coding</keywords>
+    <occupation>general_and_other_it_software</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2026-07-17T10:08:57+00:00</createdAt>
+</position>
+
+<position>
+    <id>2330060</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Nichts passendes gefunden?</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Initiativbewerbung (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-or-part-time</schedule>
+    <yearsOfExperience>2-5</yearsOfExperience>
+    <keywords>Initiativ,Consulting,Software</keywords>
+    <occupation>general_and_other_it_software</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2025-09-09T15:21:08+00:00</createdAt>
+</position>
+
+<position>
+    <id>2773345</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Solingen</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Dortmund</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+        <office>Hybrid</office>
+    </additionalOffices>
+    <department>Digital Integration</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Integration Specialist / Senior IT Consultant (m/w/d)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <keywords>API, iPaaS ,MuleSoft </keywords>
+    <occupation>enterprise_software_implementation_consulting</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2026-08-28T17:14:19+00:00</createdAt>
+</position>
+
+<position>
+    <id>2543930</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Sales</department>
+    <recruitingCategory>Festangestellte</recruitingCategory>
+    <name>Key Account Manager*in (w/d/m) Insurance</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <keywords>Key Account Management,Account Management,Insurance,Bestandskundenentwicklung,Fokuskundenentwicklung,Neukundenakquise</keywords>
+    <occupation>account_management_commissioned</occupation>
+    <occupationCategory>sales_and_business_development</occupationCategory>
+    <createdAt>2026-02-25T12:00:44+00:00</createdAt>
+</position>
+
+<position>
+    <id>2625981</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Services</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Senior AI-Native Software Architect / Engineer (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-or-part-time</schedule>
+    <yearsOfExperience>5-7</yearsOfExperience>
+    <keywords>AI,KI,Softwareentwicklung,LLM,Cloud,Clout native,Azure,AWS,GCP,DevOps,CI/CD</keywords>
+    <occupation>software_and_system_architecture</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2026-05-06T13:37:17+00:00</createdAt>
+</position>
+
+<position>
+    <id>2330065</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Services</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Senior Azure Architekt (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <yearsOfExperience>7-10</yearsOfExperience>
+    <keywords>Azure,Cloud native</keywords>
+    <occupation>software_and_system_architecture</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2025-09-09T15:23:57+00:00</createdAt>
+</position>
+
+<position>
+    <id>2391494</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Services</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Senior Azure Cloud Native Developer (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-or-part-time</schedule>
+    <yearsOfExperience>2-5</yearsOfExperience>
+    <keywords>Fullstack,Azure,Serverless,eventdriven,IaaC,DevOps,CI/CD,Cloud Native</keywords>
+    <occupation>general_and_other_it_software</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2025-10-16T10:43:13+00:00</createdAt>
+</position>
+
+<position>
+    <id>2716788</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Services</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Senior Cloud Engineer and Consultant (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-time</schedule>
+    <yearsOfExperience>5-7</yearsOfExperience>
+    <keywords>Cloud-native,Kubernetes,CNCF,Cluster-Design,GitOps-Workflows,IaaC,Terraform,CI/CD-Pipelines</keywords>
+    <occupation>general_and_other_it_software</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2026-07-17T09:42:09+00:00</createdAt>
+</position>
+
+<position>
+    <id>2426745</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Services</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Senior Data Architekt (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-or-part-time</schedule>
+    <yearsOfExperience>2-5</yearsOfExperience>
+    <keywords>Data,Datenarchitekturen,Dataanalyse,Data Intelligence,Dataintegration,Datenfluss,DataOps,Observability,Databricks,Snowflake</keywords>
+    <occupation>general_and_other_it_software</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2025-11-13T16:35:33+00:00</createdAt>
+</position>
+
+<position>
+    <id>2320340</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Digital Integration</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Senior Integration Consultant für API-Management (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-or-part-time</schedule>
+    <yearsOfExperience>2-5</yearsOfExperience>
+    <keywords>PoC,Apigee,Istio,Kong,Swagger/OpenAPI,MuleSoft,Tibco,WSO2,Dell Boomi,Camel,Spring Integration,Java,JVM</keywords>
+    <occupation>software_and_web_development</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2025-09-02T14:51:30+00:00</createdAt>
+</position>
+
+<position>
+    <id>2325413</id>
+    <subcompany>codecentric AG</subcompany>
+    <office>Hybrid</office>
+    <additionalOffices>
+        <office>München</office>
+        <office>Berlin</office>
+        <office>Hamburg</office>
+        <office>Solingen</office>
+        <office>Bielefeld</office>
+        <office>Dortmund</office>
+        <office>Erfurt</office>
+        <office>Leipzig</office>
+        <office>Karlsruhe</office>
+        <office>Münster</office>
+        <office>Nürnberg</office>
+        <office>Stuttgart</office>
+        <office>Frankfurt</office>
+    </additionalOffices>
+    <department>Consulting - Services</department>
+    <recruitingCategory>Festangestellte (IT)</recruitingCategory>
+    <name>Software Developer und Consultant mit Schwerpunkt Data (w/d/m)</name>
+    <jobDescriptions></jobDescriptions>
+    <employmentType>permanent</employmentType>
+    <seniority>experienced</seniority>
+    <schedule>full-or-part-time</schedule>
+    <yearsOfExperience>2-5</yearsOfExperience>
+    <keywords>AWS,GCP,Azure,Data Warehousing,BigQuery,Snowflake,Redshift,Databricks,SQL,noSQL,Argo Workflows,Airflow,Python,ETL</keywords>
+    <occupation>software_and_web_development</occupation>
+    <occupationCategory>it_software</occupationCategory>
+    <createdAt>2025-09-05T15:14:35+00:00</createdAt>
+</position>
+
+</workzag-jobs>

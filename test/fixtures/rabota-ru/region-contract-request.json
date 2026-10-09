@@ -1,0 +1,21 @@
+{
+  "request": {
+    "filter": {
+      "type_ids": [
+        2
+      ],
+      "excluded_type_ids": [
+        11
+      ]
+    },
+    "offset": 0,
+    "limit": 2000,
+    "fields": [
+      "domain",
+      "id",
+      "name"
+    ]
+  },
+  "request_id": 42424242,
+  "application_id": 13
+}

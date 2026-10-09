@@ -1,0 +1,29 @@
+[
+  ["~#cmap", [
+    ["~#list", [
+      "~$app.model.feed.vacancies/search!",
+      ["^ ", "~:ui/query", "", "~:ui/startups-only?", false, "~:ui/remote?", false,
+        "~:ui/cities", ["~#set", []], "~:ui/specializations", ["~#set", []], "~:page", 2]
+    ]],
+    [
+      ["^ ", "~:results", [
+        "~:vacancy/id",
+        ["^ ", "~:>/vacancy", [
+          "~:vacancy/id", "~:vacancy/title", "~:vacancy/summary",
+          ["^ ", "~:>/specialization+skill-tags", [
+            "~:vacancy/id", "~:vacancy.wip/id",
+            ["^ ", "~:vacancy/specializations*", [
+              "~:specialization/id", "~:specialization/name", "~:specialization/skills"
+            ]],
+            "~:vacancy/skills"
+          ]],
+          "~:vacancy/salary",
+          ["^ ", "~:vacancy/city", ["~:city.algolia/id", "~:city.algolia/name", "~:city.algolia/country"]],
+          "~:vacancy/remote?", "~:vacancy/geo", "~:vacancy/url",
+          "~:company/id", "~:company/logo-url", "~:company/name"
+        ]]
+      ]],
+      "~:meta", "~:specializations-facet", "~:cities-facet"
+    ]
+  ]]
+]

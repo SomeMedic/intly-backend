@@ -1,0 +1,258 @@
+{
+  "checkedAt": "2026-10-04T17:26:30.123Z",
+  "scope": "Read-only provider HTML observation; no source mutation or full-platform acceptance",
+  "results": [
+    {
+      "page": 1,
+      "requestedUrl": "https://career.habr.com/vacancies?sort=date&page=1",
+      "finalUrl": "https://career.habr.com/vacancies?sort=date&page=1",
+      "htmlBytes": 279140,
+      "title": "Работа и свежие вакансии для IT специалистов от прямых работодателей — Хабр Карьера",
+      "vacancyUrls": [
+        "/vacancies/1000167378",
+        "/vacancies/1000167326",
+        "/vacancies/1000167380",
+        "/vacancies/1000167379",
+        "/vacancies/1000167268",
+        "/vacancies/1000167383",
+        "/vacancies/1000167382",
+        "/vacancies/1000167377",
+        "/vacancies/1000167375",
+        "/vacancies/1000167376",
+        "/vacancies/1000167373",
+        "/vacancies/1000167374",
+        "/vacancies/1000167370",
+        "/vacancies/1000167363",
+        "/vacancies/1000167364",
+        "/vacancies/1000167359",
+        "/vacancies/1000167358",
+        "/vacancies/1000167357",
+        "/vacancies/1000167368",
+        "/vacancies/1000167371",
+        "/vacancies/1000167270",
+        "/vacancies/1000167367",
+        "/vacancies/1000167372",
+        "/vacancies/1000167366",
+        "/vacancies/1000167365"
+      ],
+      "dates": [
+        {
+          "datetime": "2026-10-04T17:46:20+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:20+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:20+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:20+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:20+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:20+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:18+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:18+03:00",
+          "text": "4 октября"
+        }
+      ],
+      "pagination": [
+        {
+          "href": "/vacancies?page=2&sort=date&type=all",
+          "text": "2"
+        },
+        {
+          "href": "/vacancies?page=3&sort=date&type=all",
+          "text": "3"
+        },
+        {
+          "href": "/vacancies?page=4&sort=date&type=all",
+          "text": "4"
+        },
+        {
+          "href": "/vacancies?page=5&sort=date&type=all",
+          "text": "5"
+        },
+        {
+          "href": "/vacancies?page=2&sort=date&type=all",
+          "text": "Next ›"
+        }
+      ],
+      "scripts": [
+        {
+          "length": 45
+        },
+        {
+          "src": "https://yandex.ru/ads/system/context.js",
+          "length": 5
+        },
+        {
+          "length": 117
+        },
+        {
+          "length": 977
+        },
+        {
+          "length": 2084
+        },
+        {
+          "length": 50
+        },
+        {
+          "type": "application/json",
+          "length": 87946
+        },
+        {
+          "length": 210
+        },
+        {
+          "length": 186
+        },
+        {
+          "length": 432
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "requestedUrl": "https://career.habr.com/vacancies?sort=date&page=2",
+      "finalUrl": "https://career.habr.com/vacancies?sort=date&page=2",
+      "htmlBytes": 282314,
+      "title": "Работа и свежие вакансии для IT специалистов от прямых работодателей — Хабр Карьера",
+      "vacancyUrls": [
+        "/vacancies/1000167369",
+        "/vacancies/1000167273",
+        "/vacancies/1000167272",
+        "/vacancies/1000167361",
+        "/vacancies/1000167356",
+        "/vacancies/1000167355",
+        "/vacancies/1000167350",
+        "/vacancies/1000167342",
+        "/vacancies/1000167349",
+        "/vacancies/1000167348",
+        "/vacancies/1000167347",
+        "/vacancies/1000167343",
+        "/vacancies/1000167354",
+        "/vacancies/1000167330",
+        "/vacancies/1000167331",
+        "/vacancies/1000167325",
+        "/vacancies/1000167346",
+        "/vacancies/1000167329",
+        "/vacancies/1000167269",
+        "/vacancies/1000167335",
+        "/vacancies/1000167334",
+        "/vacancies/1000167332",
+        "/vacancies/1000167267",
+        "/vacancies/1000167328",
+        "/vacancies/1000167265"
+      ],
+      "dates": [
+        {
+          "datetime": "2026-10-04T17:46:11+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:11+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:11+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:11+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:11+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:11+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:11+03:00",
+          "text": "4 октября"
+        },
+        {
+          "datetime": "2026-10-04T17:46:11+03:00",
+          "text": "4 октября"
+        }
+      ],
+      "pagination": [
+        {
+          "href": "/vacancies?page=2&sort=date&type=all",
+          "text": "2"
+        },
+        {
+          "href": "/vacancies?page=3&sort=date&type=all",
+          "text": "3"
+        },
+        {
+          "href": "/vacancies?page=4&sort=date&type=all",
+          "text": "4"
+        },
+        {
+          "href": "/vacancies?page=5&sort=date&type=all",
+          "text": "5"
+        },
+        {
+          "href": "/vacancies?page=6&sort=date&type=all",
+          "text": "6"
+        },
+        {
+          "href": "/vacancies?page=3&sort=date&type=all",
+          "text": "Next ›"
+        }
+      ],
+      "scripts": [
+        {
+          "length": 45
+        },
+        {
+          "src": "https://yandex.ru/ads/system/context.js",
+          "length": 5
+        },
+        {
+          "length": 117
+        },
+        {
+          "length": 977
+        },
+        {
+          "length": 2084
+        },
+        {
+          "length": 50
+        },
+        {
+          "type": "application/json",
+          "length": 88330
+        },
+        {
+          "length": 210
+        },
+        {
+          "length": 186
+        },
+        {
+          "length": 432
+        }
+      ]
+    }
+  ]
+}
