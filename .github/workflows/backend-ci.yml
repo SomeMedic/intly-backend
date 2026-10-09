@@ -45,8 +45,18 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 12
+      redis:
+        image: redis:7.4-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 12
     env:
       MONGODB_URI: mongodb://127.0.0.1:27017/intly_ci
+      REDIS_URL: redis://127.0.0.1:6379
     permissions:
       contents: read
     steps:
@@ -63,7 +73,35 @@ jobs:
       - run: pnpm run lint
       - run: pnpm test
       - run: pnpm run build
-      - run: pnpm run openapi
+      - name: Export OpenAPI from the built API
+        env:
+          NODE_ENV: test
+          HOST: 127.0.0.1
+          PORT: "3001"
+          API_URL: http://127.0.0.1:3001
+          JWT_SECRET: intly-ci-only-jwt-secret-never-used-in-production
+          MASTER_ENCRYPTION_KEY: "0000000000000000000000000000000000000000000000000000000000000000"
+          RUN_WORKERS: "false"
+          SOURCE_SCHEDULER_ENABLED: "false"
+        run: |
+          set -euo pipefail
+          node dist/main.js > "$RUNNER_TEMP/intly-ci-api.log" 2>&1 &
+          api_pid=$!
+          trap 'kill "$api_pid" 2>/dev/null || true' EXIT
+          for attempt in {1..60}; do
+            if curl --fail --silent --max-time 2 "$API_URL/api/v1/health/ready" > /dev/null; then
+              pnpm run openapi
+              node -e 'const schema = require("./openapi.json"); if (!schema.openapi || !schema.paths?.["/api/v1/auth/login"]) throw new Error("Incomplete OpenAPI export");'
+              exit 0
+            fi
+            if ! kill -0 "$api_pid" 2>/dev/null; then
+              cat "$RUNNER_TEMP/intly-ci-api.log"
+              exit 1
+            fi
+            sleep 1
+          done
+          tail -100 "$RUNNER_TEMP/intly-ci-api.log"
+          exit 1
       - run: bash -n operations/scripts/deploy-backend.sh
       - run: operations/scripts/deploy-backend.sh --help
       - run: python3 -m unittest discover -s operations/tests -p 'test_github_deploy.py'
